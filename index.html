@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adstock Labs | Enterprise Marketing Portfolio Intelligence</title>
-  <meta name="description" content="Stop guessing. Know exactly where your next ad dollar should go. Continuous marketing portfolio intelligence that eliminates channel saturation and maximizes revenue.">
+  <title>Adstock | Portfolio Intelligence for Marketing & Finance Leaders</title>
+  <meta name="description" content="Stop guessing. Know exactly where your next ad dollar belongs. Adstock gives CMOs and CFOs unified, boardroom-grade clarity on real incrementality, budget carryover, and capital efficiency.">
   
   <!-- OpenGraph / Twitter Meta -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Adstock Labs | Enterprise Marketing Portfolio Intelligence">
-  <meta property="og:description" content="Continuous marketing portfolio intelligence that eliminates channel saturation and maximizes enterprise media revenue.">
+  <meta property="og:title" content="Adstock | Portfolio Intelligence for Marketing & Finance Leaders">
+  <meta property="og:description" content="Unified portfolio intelligence for CMOs and CFOs. Eliminate wasteful overspend, capture ad carryover momentum, and maximize capital efficiency.">
   <meta property="og:url" content="https://adstocklabs.com">
   <meta name="theme-color" content="#0A0C0E">
 
@@ -67,14 +67,12 @@
   </script>
 
   <style>
-    /* Custom Styling for Wiz / Cursor Dark Mode Feel */
+    /* Clean Obsidian Executive Theme */
     body {
       background-color: #0A0C0E;
       color: #E2E8F0;
       font-family: 'Inter', sans-serif;
       overflow-x: hidden;
-      selection-background-color: #10B981;
-      selection-color: #0A0C0E;
     }
 
     ::selection {
@@ -82,19 +80,14 @@
       color: #0A0C0E;
     }
 
-    /* Subtle grid background */
+    /* Subtle hairline grid */
     .bg-grid-pattern {
       background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
                         linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-      background-size: 32px 32px;
+      background-size: 36px 36px;
     }
 
-    .bg-dots-pattern {
-      background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
-      background-size: 24px 24px;
-    }
-
-    /* Custom Range Slider */
+    /* Range Slider Styling */
     input[type=range] {
       -webkit-appearance: none;
       width: 100%;
@@ -132,72 +125,58 @@
       border: 2px solid #FFFFFF;
       transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
-
-    /* Hairline border utility */
-    .border-hairline {
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-
-    .border-hairline-emerald {
-      border: 1px solid rgba(16, 185, 129, 0.3);
-    }
   </style>
 </head>
 <body class="min-h-screen bg-obsidian text-slate-200 antialiased relative">
 
-  <!-- Radial gradient ambient lighting -->
+  <!-- Ambient lighting -->
   <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[900px] h-[550px] bg-emerald-500/10 blur-[130px] rounded-full pointer-events-none -z-10"></div>
-  <div class="fixed top-[45%] right-0 w-[550px] h-[550px] bg-emerald-500/5 blur-[140px] rounded-full pointer-events-none -z-10"></div>
+  <div class="fixed top-[50%] right-0 w-[550px] h-[550px] bg-emerald-500/5 blur-[140px] rounded-full pointer-events-none -z-10"></div>
 
   <!-- ========================================================================= -->
   <!-- 1. STICKY TOP NAVIGATION -->
   <!-- ========================================================================= -->
-  <header class="sticky top-0 z-50 w-full backdrop-blur-xl bg-obsidian/85 border-b border-white/10 transition-all duration-200">
+  <header class="sticky top-0 z-50 w-full backdrop-blur-xl bg-obsidian/90 border-b border-white/10 transition-all duration-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16 sm:h-18">
         
-        <!-- Left: Wordmark & Monospace Version Badge -->
+        <!-- Left: Adstock Brand Logo -->
         <div class="flex items-center gap-3">
           <a href="#" class="flex items-center gap-2.5 group">
             <div class="w-8 h-8 rounded-lg bg-surface-elevated border border-emerald-500/30 flex items-center justify-center text-emerald-400 group-hover:border-emerald-400 transition-colors shadow-[0_0_12px_rgba(16,185,129,0.2)]">
               <i data-lucide="layers" class="w-4 h-4 text-emerald-400"></i>
             </div>
-            <span class="font-bold text-lg tracking-tight text-white flex items-center gap-1">
-              Adstock<span class="text-emerald-400">Labs</span>
+            <span class="font-bold text-xl tracking-tight text-white">
+              Adstock
             </span>
           </a>
-          
-          <!-- Subtle Monospace Badge -->
-          <div class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-card border border-white/10 text-xs font-mono text-slate-400">
-            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span>[v1.4 • Prod]</span>
-          </div>
         </div>
 
-        <!-- Center Links -->
+        <!-- Center Links: Platform, Why Adstock, Executive Impact, Walkthrough -->
         <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
           <a href="#platform" class="hover:text-white transition-colors">Platform</a>
-          <a href="#how-it-works" class="hover:text-white transition-colors">How It Works</a>
-          <a href="#comparison" class="hover:text-white transition-colors">Comparison</a>
+          <a href="#why-adstock" class="hover:text-white transition-colors">Why Adstock</a>
+          <a href="#executive-impact" class="hover:text-white transition-colors">Executive Impact</a>
           <a href="#calculator" class="hover:text-white transition-colors flex items-center gap-1.5">
-            <span>ROI Calculator</span>
+            <span>ROI Simulator</span>
             <span class="px-1.5 py-0.2 rounded text-[10px] font-mono bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">Live</span>
           </a>
+          <a href="#walkthrough" class="hover:text-white transition-colors">Walkthrough</a>
         </nav>
 
         <!-- Right CTAs -->
         <div class="flex items-center gap-3">
-          <a href="#demo" class="hidden sm:inline-flex items-center justify-center px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-medium text-slate-300 hover:text-white border border-white/15 hover:border-white/30 bg-surface-card hover:bg-surface-elevated transition-all duration-150">
+          <a href="#walkthrough" class="hidden sm:inline-flex items-center justify-center px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-medium text-slate-300 hover:text-white border border-white/15 hover:border-white/30 bg-surface-card hover:bg-surface-elevated transition-all duration-150">
             Sign In
           </a>
-          <a href="#demo" class="inline-flex items-center justify-center gap-1.5 px-4 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-obsidian bg-emerald-400 hover:bg-emerald-300 shadow-[0_0_20px_rgba(16,185,129,0.35)] transition-all duration-150 transform hover:-translate-y-0.5">
-            <span>Book a Demo</span>
+          <a href="#walkthrough" class="inline-flex items-center justify-center gap-1.5 px-4 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-obsidian bg-emerald-400 hover:bg-emerald-300 shadow-[0_0_20px_rgba(16,185,129,0.35)] transition-all duration-150 transform hover:-translate-y-0.5">
+            <span>Request a Walkthrough</span>
             <i data-lucide="arrow-right" class="w-3.5 h-3.5 stroke-[2.5]"></i>
           </a>
 
           <!-- Mobile Hamburger Button -->
           <button id="mobile-menu-btn" type="button" class="md:hidden p-2 text-slate-400 hover:text-white focus:outline-none" aria-label="Toggle Navigation Menu">
-            <i data-lucide="menu" id="menu-icon" class="w-5 h-5"></i>
+            <i data-lucide="menu" class="w-5 h-5"></i>
           </button>
         </div>
 
@@ -206,23 +185,14 @@
 
     <!-- Mobile Dropdown Menu -->
     <div id="mobile-menu" class="hidden md:hidden border-t border-white/10 bg-obsidian-900/95 backdrop-blur-xl px-4 pt-3 pb-5 space-y-3">
-      <div class="flex items-center justify-between pb-2 border-b border-white/5">
-        <span class="text-xs font-mono text-slate-400">[v1.4 • Prod Engine]</span>
-        <span class="inline-flex items-center gap-1 text-[11px] font-mono text-emerald-400">
-          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-          Operational
-        </span>
-      </div>
       <a href="#platform" class="block py-1.5 text-sm font-medium text-slate-200 hover:text-emerald-400 mobile-nav-link">Platform</a>
-      <a href="#how-it-works" class="block py-1.5 text-sm font-medium text-slate-200 hover:text-emerald-400 mobile-nav-link">How It Works</a>
-      <a href="#comparison" class="block py-1.5 text-sm font-medium text-slate-200 hover:text-emerald-400 mobile-nav-link">Comparison</a>
-      <a href="#calculator" class="block py-1.5 text-sm font-medium text-slate-200 hover:text-emerald-400 mobile-nav-link">ROI Calculator</a>
+      <a href="#why-adstock" class="block py-1.5 text-sm font-medium text-slate-200 hover:text-emerald-400 mobile-nav-link">Why Adstock</a>
+      <a href="#executive-impact" class="block py-1.5 text-sm font-medium text-slate-200 hover:text-emerald-400 mobile-nav-link">Executive Impact</a>
+      <a href="#calculator" class="block py-1.5 text-sm font-medium text-slate-200 hover:text-emerald-400 mobile-nav-link">ROI Simulator</a>
+      <a href="#walkthrough" class="block py-1.5 text-sm font-medium text-slate-200 hover:text-emerald-400 mobile-nav-link">Walkthrough</a>
       <div class="pt-2 flex flex-col gap-2">
-        <a href="#demo" class="w-full text-center py-2 rounded-lg text-xs font-medium text-slate-300 border border-white/15 bg-surface-card mobile-nav-link">
-          Sign In
-        </a>
-        <a href="#demo" class="w-full text-center py-2 rounded-lg text-xs font-semibold text-obsidian bg-emerald-400 shadow-[0_0_15px_rgba(16,185,129,0.3)] mobile-nav-link">
-          Book an Enterprise Demo
+        <a href="#walkthrough" class="w-full text-center py-2 rounded-lg text-xs font-semibold text-obsidian bg-emerald-400 shadow-[0_0_15px_rgba(16,185,129,0.3)] mobile-nav-link">
+          Request a Walkthrough
         </a>
       </div>
     </div>
@@ -239,85 +209,84 @@
       <div class="text-center max-w-4xl mx-auto">
         
         <!-- Pill Badge -->
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs sm:text-sm font-mono mb-6 shadow-[0_0_15px_rgba(16,185,129,0.15)]">
-          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-          <span>Enterprise Marketing Portfolio Intelligence</span>
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs sm:text-sm font-medium mb-6 shadow-[0_0_15px_rgba(16,185,129,0.15)]">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          <span>Portfolio Intelligence for Marketing & Finance Leaders</span>
         </div>
 
         <!-- Headline -->
         <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.08] mb-6">
           Stop guessing. <br class="hidden sm:inline">
           <span class="bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-100 to-slate-400">
-            Know exactly where your next ad dollar should go.
+            Know exactly where your next ad dollar belongs.
           </span>
         </h1>
 
-        <!-- Subheadline (CMO & Grandmother Test: Plain English) -->
+        <!-- Subheadline (Boardroom-Grade CMO/CFO Focus) -->
         <p class="text-base sm:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed mb-8">
-          Traditional attribution gives credit to the wrong ads, while static spreadsheets take months to update. 
-          <span class="text-white font-medium">Adstock Labs</span> continuously analyzes your entire ad spend across every channel to eliminate waste and maximize revenue.
+          Attribution tools chase last-click illusions; spreadsheets lag by quarters. 
+          <span class="text-white font-medium">Adstock</span> gives CMOs and CFOs unified, boardroom-grade clarity on real incrementality, budget carryover, and capital efficiency.
         </p>
 
         <!-- Primary CTAs -->
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
-          <a href="#demo" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-obsidian bg-emerald-400 hover:bg-emerald-300 shadow-[0_0_30px_rgba(16,185,129,0.4)] hover:shadow-[0_0_40px_rgba(16,185,129,0.6)] transition-all duration-200 transform hover:-translate-y-0.5 text-base">
-            <i data-lucide="sparkles" class="w-4 h-4 stroke-[2.5]"></i>
-            <span>Request Enterprise Demo</span>
+          <a href="#walkthrough" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-obsidian bg-emerald-400 hover:bg-emerald-300 shadow-[0_0_30px_rgba(16,185,129,0.4)] hover:shadow-[0_0_40px_rgba(16,185,129,0.6)] transition-all duration-200 transform hover:-translate-y-0.5 text-base">
+            <span>Request a Walkthrough</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 stroke-[2.5]"></i>
           </a>
-          <a href="#calculator" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-medium text-slate-200 hover:text-white border border-white/20 hover:border-white/40 bg-surface-card hover:bg-surface-elevated transition-all duration-200 text-base">
-            <i data-lucide="calculator" class="w-4 h-4 text-emerald-400"></i>
-            <span>Calculate Your Wasted Spend</span>
+          <a href="#dual-power" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-medium text-slate-200 hover:text-white border border-white/20 hover:border-white/40 bg-surface-card hover:bg-surface-elevated transition-all duration-200 text-base">
+            <i data-lucide="compass" class="w-4 h-4 text-emerald-400"></i>
+            <span>See How It Works</span>
           </a>
         </div>
 
-        <!-- Social Proof Metrics Bar -->
+        <!-- Executive Metrics Ribbon -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-16 pt-8 border-t border-white/10 text-left">
-          <div class="p-3 bg-surface-card/60 rounded-lg border border-white/5">
-            <div class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-1">Calibrated Spend</div>
+          <div class="p-3.5 bg-surface-card/60 rounded-xl border border-white/5">
+            <div class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-1">Media Calibrated</div>
             <div class="text-xl sm:text-2xl font-bold font-mono text-white">$500M+</div>
             <div class="text-[11px] text-emerald-400 flex items-center gap-1 mt-0.5">
-              <i data-lucide="check-circle" class="w-3 h-3"></i> Enterprise Portfolios
+              <i data-lucide="check-circle" class="w-3 h-3"></i> Enterprise Budgets
             </div>
           </div>
-          <div class="p-3 bg-surface-card/60 rounded-lg border border-white/5">
-            <div class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-1">Observed Data</div>
+          <div class="p-3.5 bg-surface-card/60 rounded-xl border border-white/5">
+            <div class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-1">Observed Incrementality</div>
             <div class="text-xl sm:text-2xl font-bold font-mono text-white">100% Real</div>
-            <div class="text-[11px] text-slate-400 mt-0.5">Zero Synthetic Prior Guesswork</div>
+            <div class="text-[11px] text-slate-400 mt-0.5">Zero Synthetic Guesswork</div>
           </div>
-          <div class="p-3 bg-surface-card/60 rounded-lg border border-white/5">
-            <div class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-1">Avg Revenue Lift</div>
+          <div class="p-3.5 bg-surface-card/60 rounded-xl border border-white/5">
+            <div class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-1">Avg Capital Yield Lift</div>
             <div class="text-xl sm:text-2xl font-bold font-mono text-emerald-400">+14.6%</div>
-            <div class="text-[11px] text-slate-400 mt-0.5">Without increasing budget</div>
+            <div class="text-[11px] text-slate-400 mt-0.5">At zero added media spend</div>
           </div>
-          <div class="p-3 bg-surface-card/60 rounded-lg border border-white/5">
-            <div class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-1">Decision Cadence</div>
-            <div class="text-xl sm:text-2xl font-bold font-mono text-white">Continuous</div>
-            <div class="text-[11px] text-slate-400 mt-0.5">Automated Daily Reallocation</div>
+          <div class="p-3.5 bg-surface-card/60 rounded-xl border border-white/5">
+            <div class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-1">Executive Alignment</div>
+            <div class="text-xl sm:text-2xl font-bold font-mono text-white">CMO + CFO</div>
+            <div class="text-[11px] text-slate-400 mt-0.5">Single source of truth</div>
           </div>
         </div>
 
       </div>
 
-      <!-- Visual Anchor / Mockup: Executive Reallocation UI Card -->
+      <!-- Executive Visual Anchor: Boardroom Portfolio Reallocation Interface -->
       <div class="max-w-5xl mx-auto mt-4">
         <div class="relative rounded-2xl bg-surface-card border border-white/15 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.85)] overflow-hidden">
           
-          <!-- Top Window Header (Cursor / Wiz Mac style) -->
-          <div class="px-4 py-3 bg-surface-elevated border-b border-white/10 flex flex-wrap items-center justify-between gap-3">
+          <!-- Top Window Header -->
+          <div class="px-5 py-3.5 bg-surface-elevated border-b border-white/10 flex flex-wrap items-center justify-between gap-3">
             <div class="flex items-center gap-2">
               <div class="w-3 h-3 rounded-full bg-[#EF4444]/80"></div>
               <div class="w-3 h-3 rounded-full bg-[#F59E0B]/80"></div>
               <div class="w-3 h-3 rounded-full bg-[#10B981]/80"></div>
-              <span class="ml-2 text-xs font-mono text-slate-400 hidden sm:inline">
-                Adstock Portfolio Optimizer v1.4 — Production Reallocation Engine
+              <span class="ml-2 text-xs font-mono text-slate-300 font-medium">
+                Adstock Executive Portfolio Console — Reallocation Analysis
               </span>
             </div>
-            <div class="flex items-center gap-3">
+            <div class="flex items-center gap-2">
               <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-[11px] font-mono text-emerald-400">
-                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                LIVE CALIBRATION
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                ACTIVE AUDIT
               </span>
-              <span class="text-xs font-mono text-slate-500 hidden md:inline">Synced: Today 08:30 UTC</span>
             </div>
           </div>
 
@@ -326,36 +295,36 @@
             
             <!-- Dashboard Stats Ribbon -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              <div class="p-3.5 rounded-xl bg-obsidian border border-white/10">
-                <div class="text-xs font-mono text-slate-400 mb-1">Current Monthly Spend</div>
+              <div class="p-4 rounded-xl bg-obsidian border border-white/10">
+                <div class="text-xs font-mono text-slate-400 mb-1">Current Monthly Portfolio</div>
                 <div class="text-2xl font-bold font-mono text-white">$4,250,000</div>
-                <div class="text-[11px] text-slate-500 mt-1">Across 6 calibrated channels</div>
+                <div class="text-[11px] text-slate-400 mt-1">Allocated across 6 primary channels</div>
               </div>
               
               <!-- Live Delta Badge Highlight -->
-              <div class="p-3.5 rounded-xl bg-emerald-950/30 border border-emerald-500/40 relative overflow-hidden">
+              <div class="p-4 rounded-xl bg-emerald-950/30 border border-emerald-500/40 relative overflow-hidden">
                 <div class="text-xs font-mono text-emerald-400 mb-1 flex items-center justify-between">
-                  <span>Projected Revenue Lift</span>
+                  <span>Projected Marginal Revenue Lift</span>
                   <span class="text-[10px] bg-emerald-500/20 px-1.5 py-0.5 rounded text-emerald-300 font-bold">+1.70%</span>
                 </div>
                 <div class="text-2xl font-bold font-mono text-emerald-400 tracking-tight flex items-baseline gap-1">
                   +$1,062,264
                 </div>
                 <div class="text-[11px] text-emerald-400/80 mt-1">
-                  Pure profit unlocked at $0 added spend
+                  Generated solely by rebalancing current capital
                 </div>
               </div>
 
-              <div class="p-3.5 rounded-xl bg-obsidian border border-white/10">
-                <div class="text-xs font-mono text-slate-400 mb-1">Optimization Confidence</div>
-                <div class="text-2xl font-bold font-mono text-white">98.4%</div>
-                <div class="text-[11px] text-slate-500 mt-1">Derived from observed real conversion tails</div>
+              <div class="p-4 rounded-xl bg-obsidian border border-white/10">
+                <div class="text-xs font-mono text-slate-400 mb-1">Reallocation Opportunity</div>
+                <div class="text-2xl font-bold font-mono text-white">$631,000</div>
+                <div class="text-[11px] text-slate-400 mt-1">Capital moving from saturated to high-headroom media</div>
               </div>
             </div>
 
             <!-- Legend Bar -->
             <div class="flex flex-wrap items-center justify-between pt-2 border-t border-white/5 text-xs">
-              <div class="font-medium text-slate-300">Portfolio Channel Reallocation Breakdown:</div>
+              <div class="font-medium text-slate-300">Channel Capital Redistribution:</div>
               <div class="flex items-center gap-5 mt-2 sm:mt-0 font-mono text-xs">
                 <div class="flex items-center gap-2">
                   <span class="w-3 h-3 rounded bg-slate-500"></span>
@@ -363,21 +332,21 @@
                 </div>
                 <div class="flex items-center gap-2">
                   <span class="w-3 h-3 rounded bg-emerald-400 shadow-[0_0_8px_rgba(16,185,129,0.5)]"></span>
-                  <span class="text-emerald-400 font-semibold">Optimized Spend</span>
+                  <span class="text-emerald-400 font-semibold">Recommended Spend</span>
                 </div>
               </div>
             </div>
 
-            <!-- The 6 Channel Comparison Bars -->
+            <!-- 6 Channel Rows with Two-Tone Horizontal Bars -->
             <div class="space-y-4 pt-1">
               
               <!-- 1. Connected TV -->
-              <div class="group bg-obsidian/70 hover:bg-obsidian p-3 rounded-xl border border-white/5 transition-all">
+              <div class="group bg-obsidian/70 hover:bg-obsidian p-3.5 rounded-xl border border-white/5 transition-all">
                 <div class="flex flex-wrap items-center justify-between text-xs sm:text-sm mb-1.5">
                   <div class="flex items-center gap-2">
                     <i data-lucide="tv" class="w-4 h-4 text-emerald-400"></i>
                     <span class="font-semibold text-white">Connected TV (CTV)</span>
-                    <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">+110.5% Headroom</span>
+                    <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">+110.5% High Headroom</span>
                   </div>
                   <div class="font-mono text-xs">
                     <span class="text-slate-400">$380k</span>
@@ -385,7 +354,6 @@
                     <span class="text-emerald-400 font-bold">$800k / mo</span>
                   </div>
                 </div>
-                <!-- Dual Bars -->
                 <div class="space-y-1">
                   <div class="w-full bg-surface-elevated rounded-full h-2.5 overflow-hidden flex">
                     <div class="bg-slate-500 h-full rounded-full transition-all duration-700" style="width: 38%;"></div>
@@ -396,13 +364,13 @@
                 </div>
               </div>
 
-              <!-- 2. Google (Search & PMax) -->
-              <div class="group bg-obsidian/70 hover:bg-obsidian p-3 rounded-xl border border-white/5 transition-all">
+              <!-- 2. Google Search & Performance Max -->
+              <div class="group bg-obsidian/70 hover:bg-obsidian p-3.5 rounded-xl border border-white/5 transition-all">
                 <div class="flex flex-wrap items-center justify-between text-xs sm:text-sm mb-1.5">
                   <div class="flex items-center gap-2">
                     <i data-lucide="search" class="w-4 h-4 text-slate-300"></i>
                     <span class="font-semibold text-white">Google (Search & Performance Max)</span>
-                    <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-white/10">Balanced (-1.8%)</span>
+                    <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-white/10">Balanced Allocation (-1.8%)</span>
                   </div>
                   <div class="font-mono text-xs">
                     <span class="text-slate-400">$1,100k</span>
@@ -410,7 +378,6 @@
                     <span class="text-emerald-400 font-bold">$1,080k / mo</span>
                   </div>
                 </div>
-                <!-- Dual Bars -->
                 <div class="space-y-1">
                   <div class="w-full bg-surface-elevated rounded-full h-2.5 overflow-hidden flex">
                     <div class="bg-slate-500 h-full rounded-full transition-all duration-700" style="width: 88%;"></div>
@@ -421,13 +388,13 @@
                 </div>
               </div>
 
-              <!-- 3. Meta (Instagram & Facebook) - SATURATED -->
-              <div class="group bg-obsidian/70 hover:bg-obsidian p-3 rounded-xl border border-amber-500/20 bg-amber-950/5 transition-all">
+              <!-- 3. Meta Social (At Growth Ceiling) -->
+              <div class="group bg-obsidian/70 hover:bg-obsidian p-3.5 rounded-xl border border-amber-500/20 bg-amber-950/5 transition-all">
                 <div class="flex flex-wrap items-center justify-between text-xs sm:text-sm mb-1.5">
                   <div class="flex items-center gap-2">
                     <i data-lucide="share-2" class="w-4 h-4 text-amber-400"></i>
                     <span class="font-semibold text-white">Meta (IG & FB Paid Social)</span>
-                    <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/30">Saturated (-38.2%)</span>
+                    <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/30">Growth Ceiling Reached (-38.2%)</span>
                   </div>
                   <div class="font-mono text-xs">
                     <span class="text-slate-400 line-through">$1,650k</span>
@@ -435,7 +402,6 @@
                     <span class="text-emerald-400 font-bold">$1,019k / mo</span>
                   </div>
                 </div>
-                <!-- Dual Bars -->
                 <div class="space-y-1">
                   <div class="w-full bg-surface-elevated rounded-full h-2.5 overflow-hidden flex">
                     <div class="bg-slate-500 h-full rounded-full transition-all duration-700" style="width: 100%;"></div>
@@ -447,12 +413,12 @@
               </div>
 
               <!-- 4. TikTok -->
-              <div class="group bg-obsidian/70 hover:bg-obsidian p-3 rounded-xl border border-white/5 transition-all">
+              <div class="group bg-obsidian/70 hover:bg-obsidian p-3.5 rounded-xl border border-white/5 transition-all">
                 <div class="flex flex-wrap items-center justify-between text-xs sm:text-sm mb-1.5">
                   <div class="flex items-center gap-2">
                     <i data-lucide="video" class="w-4 h-4 text-slate-300"></i>
                     <span class="font-semibold text-white">TikTok</span>
-                    <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-white/10">Trimming (-7.1%)</span>
+                    <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-white/10">Trimming Overspend (-7.1%)</span>
                   </div>
                   <div class="font-mono text-xs">
                     <span class="text-slate-400">$420k</span>
@@ -460,7 +426,6 @@
                     <span class="text-emerald-400 font-bold">$390k / mo</span>
                   </div>
                 </div>
-                <!-- Dual Bars -->
                 <div class="space-y-1">
                   <div class="w-full bg-surface-elevated rounded-full h-2.5 overflow-hidden flex">
                     <div class="bg-slate-500 h-full rounded-full transition-all duration-700" style="width: 42%;"></div>
@@ -472,12 +437,12 @@
               </div>
 
               <!-- 5. YouTube Video -->
-              <div class="group bg-obsidian/70 hover:bg-obsidian p-3 rounded-xl border border-white/5 transition-all">
+              <div class="group bg-obsidian/70 hover:bg-obsidian p-3.5 rounded-xl border border-white/5 transition-all">
                 <div class="flex flex-wrap items-center justify-between text-xs sm:text-sm mb-1.5">
                   <div class="flex items-center gap-2">
                     <i data-lucide="play-circle" class="w-4 h-4 text-emerald-400"></i>
-                    <span class="font-semibold text-white">YouTube (Brand & Direct Response)</span>
-                    <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">+37.8% Lag Tail</span>
+                    <span class="font-semibold text-white">YouTube (Brand & Consideration)</span>
+                    <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">+37.8% Momentum Tail</span>
                   </div>
                   <div class="font-mono text-xs">
                     <span class="text-slate-400">$450k</span>
@@ -485,7 +450,6 @@
                     <span class="text-emerald-400 font-bold">$620k / mo</span>
                   </div>
                 </div>
-                <!-- Dual Bars -->
                 <div class="space-y-1">
                   <div class="w-full bg-surface-elevated rounded-full h-2.5 overflow-hidden flex">
                     <div class="bg-slate-500 h-full rounded-full transition-all duration-700" style="width: 45%;"></div>
@@ -496,12 +460,12 @@
                 </div>
               </div>
 
-              <!-- 6. Email & Lifecycle Retention -->
-              <div class="group bg-obsidian/70 hover:bg-obsidian p-3 rounded-xl border border-white/5 transition-all">
+              <!-- 6. Email & Retention -->
+              <div class="group bg-obsidian/70 hover:bg-obsidian p-3.5 rounded-xl border border-white/5 transition-all">
                 <div class="flex flex-wrap items-center justify-between text-xs sm:text-sm mb-1.5">
                   <div class="flex items-center gap-2">
                     <i data-lucide="mail" class="w-4 h-4 text-emerald-400"></i>
-                    <span class="font-semibold text-white">Email & Retention Media</span>
+                    <span class="font-semibold text-white">Lifecycle & Retention Media</span>
                     <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">+36.4% Efficiency</span>
                   </div>
                   <div class="font-mono text-xs">
@@ -510,7 +474,6 @@
                     <span class="text-emerald-400 font-bold">$341k / mo</span>
                   </div>
                 </div>
-                <!-- Dual Bars -->
                 <div class="space-y-1">
                   <div class="w-full bg-surface-elevated rounded-full h-2.5 overflow-hidden flex">
                     <div class="bg-slate-500 h-full rounded-full transition-all duration-700" style="width: 25%;"></div>
@@ -523,39 +486,35 @@
 
             </div>
 
-            <!-- Wiz-Style Diagnostic Alerts -->
+            <!-- Executive Diagnostic Insights -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-3">
-              
-              <!-- Warning / Saturation Alert -->
               <div class="p-4 rounded-xl bg-amber-500/10 border border-amber-500/30 text-left flex items-start gap-3.5">
                 <div class="p-2 rounded-lg bg-amber-500/20 text-amber-400 shrink-0 mt-0.5">
                   <i data-lucide="alert-triangle" class="w-5 h-5"></i>
                 </div>
                 <div>
-                  <div class="font-bold text-amber-400 text-sm flex items-center gap-1.5">
-                    <span>Meta: Channel Saturation Detected ($631k over-allocated)</span>
+                  <div class="font-bold text-amber-400 text-sm">
+                    Meta Social: Growth Ceiling Identified ($631k over-allocated)
                   </div>
                   <p class="text-xs text-slate-300 mt-1 leading-relaxed">
-                    Frequency exceeds 4.8x/wk. Marginal return on next $10,000 has plummeted 68% due to audience fatigue. Reallocating $631,000 to high-headroom channels instantly recovers efficiency.
+                    Frequency saturation has dropped the marginal return on additional spend by 68%. Reallocating $631,000 to untapped channels prevents wasted capital and protects blended ROAS.
                   </p>
                 </div>
               </div>
 
-              <!-- Opportunity / Headroom Alert -->
               <div class="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-left flex items-start gap-3.5">
                 <div class="p-2 rounded-lg bg-emerald-500/20 text-emerald-400 shrink-0 mt-0.5">
                   <i data-lucide="trending-up" class="w-5 h-5"></i>
                 </div>
                 <div>
-                  <div class="font-bold text-emerald-400 text-sm flex items-center gap-1.5">
-                    <span>CTV: High Headroom Available</span>
+                  <div class="font-bold text-emerald-400 text-sm">
+                    Connected TV: Untapped Brand Momentum Available
                   </div>
                   <p class="text-xs text-slate-300 mt-1 leading-relaxed">
-                    Connected TV carryover lag is unspent. Increasing monthly spend by $420k yields +$710k in observed incremental revenue with a 14-day adstock decay tail.
+                    Strong 14-day ad carryover is under-funded. Increasing monthly spend by $420,000 unlocks +$710,000 in incremental revenue across downstream organic and direct search.
                   </p>
                 </div>
               </div>
-
             </div>
 
           </div>
@@ -567,117 +526,265 @@
 
 
   <!-- ========================================================================= -->
-  <!-- 3. THE COMPARISON GRID (The Wiz / Industry Reality Section) -->
+  <!-- 3. CORE PHILOSOPHY: THE DUAL POWER OF ADSTOCK -->
   <!-- ========================================================================= -->
-  <section id="comparison" class="py-20 sm:py-28 bg-surface border-y border-white/10 relative">
+  <section id="dual-power" class="py-20 sm:py-28 bg-surface border-y border-white/10 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono uppercase tracking-wider mb-4">
+          The Adstock Principle
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight mb-5">
+          The Dual Power of Adstock
+        </h2>
+        <p class="text-base sm:text-lg text-slate-300 leading-relaxed">
+          The modern enterprise has two distinct needs for its advertising investments. Our name reflects both.
+        </p>
+      </div>
+
+      <!-- 2-Column Split Card Layout: Finance vs Marketing -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch mb-12">
+        
+        <!-- Side 1: Taking Stock of Every Dollar (Finance & Leadership) -->
+        <div class="rounded-2xl bg-obsidian border border-white/10 p-8 sm:p-10 flex flex-col justify-between hover:border-white/25 transition-all">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <span class="text-xs font-mono px-3 py-1 rounded-full bg-slate-800 text-slate-300 border border-white/10 font-semibold">
+                Side 01 • Capital Discipline
+              </span>
+              <div class="w-10 h-10 rounded-xl bg-surface-elevated border border-white/10 flex items-center justify-center text-slate-200">
+                <i data-lucide="wallet" class="w-5 h-5 text-emerald-400"></i>
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white mb-3">
+              Taking Stock of Every Dollar
+            </h3>
+            <div class="text-xs font-mono text-emerald-400 mb-4 font-semibold uppercase tracking-wider">
+              For Finance & Executive Leadership
+            </div>
+
+            <p class="text-sm sm:text-base text-slate-300 leading-relaxed mb-8">
+              Capital discipline matters. Get an unvarnished audit of channel efficiency, marginal returns, and exactly where budgets are hitting a wall—before you overspend.
+            </p>
+
+            <div class="space-y-4 text-xs sm:text-sm">
+              <div class="flex items-start gap-3.5 p-3.5 rounded-xl bg-surface-card border border-white/5">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                <div>
+                  <strong class="text-white font-semibold block">Audit Channel Efficiency:</strong>
+                  <span class="text-slate-400">Identify exactly where spending has passed peak efficiency, eliminating wasted budget on exhausted audiences.</span>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5 p-3.5 rounded-xl bg-surface-card border border-white/5">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                <div>
+                  <strong class="text-white font-semibold block">Marginal Return Clarity:</strong>
+                  <span class="text-slate-400">Know the expected revenue return of the next $50,000 committed to each channel before spending it.</span>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5 p-3.5 rounded-xl bg-surface-card border border-white/5">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                <div>
+                  <strong class="text-white font-semibold block">Boardroom-Ready Accountability:</strong>
+                  <span class="text-slate-400">Replace vendor click metrics with defensible incrementality numbers the CFO and audit committee trust.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-white/10 font-mono text-xs text-slate-400 flex items-center justify-between">
+            <span>Core Objective: Zero Capital Waste</span>
+            <i data-lucide="shield" class="w-4 h-4 text-emerald-400"></i>
+          </div>
+        </div>
+
+        <!-- Side 2: Measuring Ad Momentum & Halo (Marketing & Growth) -->
+        <div class="rounded-2xl bg-surface-card border-2 border-emerald-500/40 p-8 sm:p-10 flex flex-col justify-between shadow-glow-emerald hover:border-emerald-400 transition-all">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <span class="text-xs font-mono px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 font-semibold">
+                Side 02 • Media Momentum
+              </span>
+              <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+                <i data-lucide="sparkles" class="w-5 h-5 text-emerald-400"></i>
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white mb-3">
+              Measuring Ad Momentum & Halo
+            </h3>
+            <div class="text-xs font-mono text-emerald-400 mb-4 font-semibold uppercase tracking-wider">
+              For Marketing & Growth Leadership
+            </div>
+
+            <p class="text-sm sm:text-base text-slate-300 leading-relaxed mb-8">
+              Great advertising builds over time. Last-click ignores awareness and brand lift; Adstock captures the true carryover effects and cross-channel halo of your full-funnel investments.
+            </p>
+
+            <div class="space-y-4 text-xs sm:text-sm">
+              <div class="flex items-start gap-3.5 p-3.5 rounded-xl bg-obsidian border border-white/5">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                <div>
+                  <strong class="text-white font-semibold block">Capture Real Ad Carryover:</strong>
+                  <span class="text-slate-300">Measure the lingering 7-day, 14-day, and 30-day conversion tail of video, Connected TV, and brand campaigns.</span>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5 p-3.5 rounded-xl bg-obsidian border border-white/5">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                <div>
+                  <strong class="text-white font-semibold block">Protect Full-Funnel Investments:</strong>
+                  <span class="text-slate-300">Defend upper-funnel and brand budgets with empirical proof of how awareness lowers customer acquisition cost.</span>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5 p-3.5 rounded-xl bg-obsidian border border-white/5">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                <div>
+                  <strong class="text-white font-semibold block">Cross-Channel Halo Measurement:</strong>
+                  <span class="text-slate-300">Quantify how television and social awareness directly lift organic search volume and conversion rates.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-white/10 font-mono text-xs text-emerald-400 flex items-center justify-between">
+            <span>Core Objective: Full-Funnel Credit</span>
+            <i data-lucide="trending-up" class="w-4 h-4 text-emerald-400"></i>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- High-Impact Takeaway Banner -->
+      <div class="rounded-xl bg-obsidian border border-emerald-500/30 p-6 text-center max-w-4xl mx-auto shadow-[0_0_25px_rgba(16,185,129,0.1)]">
+        <p class="text-base sm:text-lg font-semibold text-white">
+          <span class="text-emerald-400 font-mono font-bold">The Takeaway:</span> 
+          "When finance gets capital discipline and marketing gets fair credit, both teams win."
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- 4. WHY ADSTOCK (The Industry Reality & Comparison) -->
+  <!-- ========================================================================= -->
+  <section id="why-adstock" class="py-20 sm:py-28 bg-obsidian relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto mb-16">
         <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-800 border border-white/10 text-slate-300 text-xs font-mono uppercase tracking-wider mb-4">
-          Industry Reality Check
+          Boardroom Alignment
         </div>
         <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight mb-5">
-          Why traditional attribution is costing you millions
+          Why traditional attribution fractures marketing and finance
         </h2>
         <p class="text-base sm:text-lg text-slate-300 leading-relaxed">
-          Marketing measurement has failed modern brands. Either you rely on click-based attribution that ignores reality, or you wait months for static agency decks. Here is how Adstock Labs transforms the paradigm.
+          When attribution dashboards report inflated ROAS but bank accounts tell a different story, leadership is forced into endless debates. Here is why the old frameworks fail.
         </p>
       </div>
 
       <!-- 3-Column High-Contrast Matrix -->
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 items-stretch">
         
-        <!-- Column 1: Last-Touch / Click Attribution -->
-        <div class="rounded-2xl bg-obsidian border border-white/10 p-7 flex flex-col justify-between relative hover:border-white/20 transition-all">
+        <!-- Column 1: Last-Click Attribution -->
+        <div class="rounded-2xl bg-surface-card border border-white/10 p-7 flex flex-col justify-between hover:border-white/20 transition-all">
           <div>
             <div class="flex items-center justify-between mb-4">
               <span class="text-xs font-mono px-2.5 py-1 rounded-full bg-red-500/10 text-red-400 border border-red-500/20 font-semibold">
-                Broken Legacy
+                The Last-Click Illusion
               </span>
               <i data-lucide="mouse-pointer-click" class="w-5 h-5 text-slate-400"></i>
             </div>
-            <h3 class="text-xl font-bold text-white mb-2">Last-Touch / Click Attribution</h3>
+            <h3 class="text-xl font-bold text-white mb-2">Last-Click Attribution</h3>
             <p class="text-xs text-slate-400 mb-6 leading-relaxed">
-              Google Analytics, Meta Pixel, standard UTM tracking dashboards.
+              Google Analytics, platform pixel dashboards, and standard UTM tracking.
             </p>
 
             <div class="space-y-4 text-xs sm:text-sm">
               <div class="flex items-start gap-3">
                 <i data-lucide="x-circle" class="w-4 h-4 text-red-400 shrink-0 mt-0.5"></i>
                 <p class="text-slate-300">
-                  <strong class="text-white font-semibold">Takes credit for existing demand:</strong> Gives 100% of the sale to brand search and retargeting ads shown to people already buying.
+                  <strong class="text-white font-semibold">Credits the Cash Register:</strong> Awards 100% of revenue credit to brand search and retargeting ads shown to buyers already holding their cards.
                 </p>
               </div>
 
               <div class="flex items-start gap-3">
                 <i data-lucide="x-circle" class="w-4 h-4 text-red-400 shrink-0 mt-0.5"></i>
                 <p class="text-slate-300">
-                  <strong class="text-white font-semibold">Blinded by privacy changes:</strong> Broken by iOS 14+, cookie deprecation, ad blockers, and multi-device journeys.
+                  <strong class="text-white font-semibold">Upper-Funnel Blind Spot:</strong> Connected TV, YouTube, and brand awareness get zero credit because customers rarely click immediately.
                 </p>
               </div>
 
               <div class="flex items-start gap-3">
                 <i data-lucide="x-circle" class="w-4 h-4 text-red-400 shrink-0 mt-0.5"></i>
                 <p class="text-slate-300">
-                  <strong class="text-white font-semibold">Ignores upper funnel entirely:</strong> TV, YouTube, podcasts, and awareness channels get $0 credit because users rarely click immediately.
+                  <strong class="text-white font-semibold">Blinded by Privacy Shifts:</strong> Degraded by iOS updates, cookie restrictions, and cross-device buyer journeys.
                 </p>
               </div>
 
               <div class="flex items-start gap-3">
                 <i data-lucide="x-circle" class="w-4 h-4 text-red-400 shrink-0 mt-0.5"></i>
                 <p class="text-slate-300">
-                  <strong class="text-white font-semibold">Distorts executive decisions:</strong> Causes CMOs to over-invest in saturated bottom-funnel clicks until marginal CAC explodes.
+                  <strong class="text-white font-semibold">Creates Boardroom Conflict:</strong> Finance sees rising blended CAC while platform dashboards report fictional 8x returns.
                 </p>
               </div>
             </div>
           </div>
 
           <div class="mt-8 pt-5 border-t border-white/10 font-mono text-xs text-slate-500">
-            Cadence: Real-time, but dangerously misleading.
+            Cadence: Real-time, but misleading.
           </div>
         </div>
 
         <!-- Column 2: Legacy Consulting MMM -->
-        <div class="rounded-2xl bg-obsidian border border-white/10 p-7 flex flex-col justify-between relative hover:border-white/20 transition-all">
+        <div class="rounded-2xl bg-surface-card border border-white/10 p-7 flex flex-col justify-between hover:border-white/20 transition-all">
           <div>
             <div class="flex items-center justify-between mb-4">
               <span class="text-xs font-mono px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 font-semibold">
-                Slow & Static
+                The 90-Day Spreadsheet Lag
               </span>
               <i data-lucide="file-text" class="w-5 h-5 text-slate-400"></i>
             </div>
             <h3 class="text-xl font-bold text-white mb-2">Legacy Consulting MMM</h3>
             <p class="text-xs text-slate-400 mb-6 leading-relaxed">
-              Traditional marketing mix modeling agencies and static econometric firms.
+              Traditional marketing mix modeling agencies and static quarterly reports.
             </p>
 
             <div class="space-y-4 text-xs sm:text-sm">
               <div class="flex items-start gap-3">
                 <i data-lucide="alert-circle" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
                 <p class="text-slate-300">
-                  <strong class="text-white font-semibold">Takes 3–6 months to deliver:</strong> By the time junior analysts deliver an 80-slide PDF deck, campaign data and market dynamics have changed.
+                  <strong class="text-white font-semibold">Obsolete on Arrival:</strong> Takes 3–6 months to deliver an agency slide deck long after market conditions have shifted.
                 </p>
               </div>
 
               <div class="flex items-start gap-3">
                 <i data-lucide="alert-circle" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
                 <p class="text-slate-300">
-                  <strong class="text-white font-semibold">Full of synthetic guesses:</strong> Relies on artificial prior distributions, arbitrary decay shapes, and manual curve-fitting.
+                  <strong class="text-white font-semibold">Synthetic Assumptions:</strong> Relies on artificial priors and manual adjustments that cannot be audited by finance.
                 </p>
               </div>
 
               <div class="flex items-start gap-3">
                 <i data-lucide="alert-circle" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
                 <p class="text-slate-300">
-                  <strong class="text-white font-semibold">Zero execution engine:</strong> Provides abstract elasticity formulas with zero tactical, weekly reallocation instructions for media buyers.
+                  <strong class="text-white font-semibold">Zero Operational Agility:</strong> Provides abstract formulas with zero weekly tactical guidance for media pacing.
                 </p>
               </div>
 
               <div class="flex items-start gap-3">
                 <i data-lucide="alert-circle" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
                 <p class="text-slate-300">
-                  <strong class="text-white font-semibold">Exorbitant fees:</strong> $250,000 to $500,000+ per year for one-off snapshots that sit unread in executive inboxes.
+                  <strong class="text-white font-semibold">High Consulting Retainers:</strong> $250k–$500k annually for backward-looking reports that gather dust.
                 </p>
               </div>
             </div>
@@ -688,69 +795,69 @@
           </div>
         </div>
 
-        <!-- Column 3: Adstock Labs (Highlighted Emerald) -->
-        <div class="rounded-2xl bg-surface-card border-2 border-emerald-500 p-7 flex flex-col justify-between relative shadow-glow-emerald hover:shadow-glow-emerald-lg transition-all scale-[1.02] z-10">
+        <!-- Column 3: Adstock (Emerald Highlight) -->
+        <div class="rounded-2xl bg-surface-elevated border-2 border-emerald-500 p-7 flex flex-col justify-between relative shadow-glow-emerald hover:shadow-glow-emerald-lg transition-all scale-[1.02] z-10">
           
           <!-- Top Tag -->
-          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-3.5 py-0.5 rounded-full bg-emerald-400 text-obsidian text-xs font-mono font-bold tracking-wide shadow-md">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-0.5 rounded-full bg-emerald-400 text-obsidian text-xs font-mono font-bold tracking-wide shadow-md">
             RECOMMENDED • ENTERPRISE STANDARD
           </div>
 
           <div>
             <div class="flex items-center justify-between mb-4 mt-1">
               <span class="text-xs font-mono px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-semibold flex items-center gap-1.5">
-                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                Continuous Portfolio Intelligence
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                Boardroom-Grade Portfolio Intelligence
               </span>
               <i data-lucide="zap" class="w-5 h-5 text-emerald-400"></i>
             </div>
-            <h3 class="text-2xl font-bold text-white mb-2 flex items-center gap-1">
-              Adstock Labs
+            <h3 class="text-2xl font-bold text-white mb-2">
+              Adstock
             </h3>
             <p class="text-xs text-emerald-400/90 mb-6 leading-relaxed">
-              Automated continuous measurement running natively in your cloud data warehouse.
+              Automated continuous measurement operating directly within your secure data warehouse.
             </p>
 
             <div class="space-y-4 text-xs sm:text-sm">
               <div class="flex items-start gap-3">
                 <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
                 <p class="text-slate-200">
-                  <strong class="text-white font-semibold">100% Real Observed Data:</strong> Zero synthetic imputation. We measure real sales, observed media pacing, and direct incrementality.
+                  <strong class="text-white font-semibold">100% Real Observed Data:</strong> Grounded purely in audited sales records and actual media pacing. Zero synthetic guesswork.
                 </p>
               </div>
 
               <div class="flex items-start gap-3">
                 <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
                 <p class="text-slate-200">
-                  <strong class="text-white font-semibold">Continuous Real-Time Calibration:</strong> Automatically models daily performance so you catch saturation before wasting hundreds of thousands.
+                  <strong class="text-white font-semibold">Identifies Growth Ceilings:</strong> Pinpoints the exact threshold where channel spend turns into waste, protecting capital efficiency.
                 </p>
               </div>
 
               <div class="flex items-start gap-3">
                 <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
                 <p class="text-slate-200">
-                  <strong class="text-white font-semibold">Measures Multi-Week Lag Tails:</strong> Captures the true delayed impact of TV, YouTube, and brand media without relying on broken cookies.
+                  <strong class="text-white font-semibold">Measures Real Carryover:</strong> Accurately credits brand, television, and video for their multi-week halo and consideration tail.
                 </p>
               </div>
 
               <div class="flex items-start gap-3">
                 <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
                 <p class="text-slate-200">
-                  <strong class="text-white font-semibold">Actionable Weekly Dollar Instructions:</strong> Tells media leads exactly which channels to increase and decrease this week for max revenue.
+                  <strong class="text-white font-semibold">Unified Boardroom Clarity:</strong> Marketing and finance agree on real incremental revenue, clearing the way for confident scaling.
                 </p>
               </div>
 
               <div class="flex items-start gap-3">
                 <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
                 <p class="text-slate-200">
-                  <strong class="text-white font-semibold">Client-Owned Data Isolation:</strong> Operates natively inside your Snowflake, BigQuery, or Databricks environment.
+                  <strong class="text-white font-semibold">Secure Warehouse Native:</strong> Runs inside Snowflake, BigQuery, or Databricks. First-party data never leaves your control.
                 </p>
               </div>
             </div>
           </div>
 
           <div class="mt-8 pt-5 border-t border-white/10 font-mono text-xs text-emerald-400 flex items-center justify-between">
-            <span>Cadence: Continuous Daily Execution</span>
+            <span>Cadence: Continuous Daily Alignment</span>
             <i data-lucide="shield-check" class="w-4 h-4"></i>
           </div>
         </div>
@@ -762,103 +869,96 @@
 
 
   <!-- ========================================================================= -->
-  <!-- 4. HOW IT WORKS (3 Plain-English Pillars) -->
+  <!-- 5. EXECUTIVE IMPACT (The 3 Business Pillars) -->
   <!-- ========================================================================= -->
-  <section id="how-it-works" class="py-20 sm:py-28 bg-obsidian relative overflow-hidden">
+  <section id="executive-impact" class="py-20 sm:py-28 bg-surface border-y border-white/10 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto mb-16">
         <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono uppercase tracking-wider mb-4">
-          The Grandmother & CMO Test
+          Capital Efficiency
         </div>
         <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight mb-5">
-          Three simple mathematical principles. <br class="hidden sm:inline">Zero black boxes.
+          Three pillars of boardroom-ready media allocation
         </h2>
         <p class="text-base sm:text-lg text-slate-300 leading-relaxed">
-          You don't need a PhD in statistics to understand why your ads work. Our engine relies on three verified economic realities that every executive intuitively understands.
+          Eliminate friction between marketing and finance with three clear, verifiable economic principles.
         </p>
       </div>
 
       <!-- 3 Plain-English Cards Grid -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
-        <!-- Card 1: Stop Channel Saturation Before It Happens -->
-        <div class="rounded-2xl bg-surface-card border border-white/10 p-7 flex flex-col justify-between hover:border-emerald-500/40 transition-all group">
+        <!-- Pillar 1: Growth Ceilings & Marginal Return -->
+        <div class="rounded-2xl bg-obsidian border border-white/10 p-7 flex flex-col justify-between hover:border-emerald-500/40 transition-all group">
           <div>
-            <!-- Monospace Number / Icon -->
             <div class="w-12 h-12 rounded-xl bg-surface-elevated border border-white/10 flex items-center justify-center text-emerald-400 font-mono font-bold text-lg mb-6 group-hover:border-emerald-500/50 transition-colors">
               01
             </div>
 
             <h3 class="text-xl font-bold text-white mb-3">
-              Stop Channel Saturation Before It Happens
+              Growth Ceilings & Marginal Return
             </h3>
 
-            <!-- Plain English Explanation -->
             <p class="text-sm text-slate-300 leading-relaxed mb-6">
-              When you pour more money into Meta or Google, each additional dollar becomes less productive. You start showing the exact same ad 8 times to the same person who already decided not to buy. 
-              <span class="text-white font-medium">Adstock Labs identifies the exact point where channel efficiency drops off a cliff</span> so you never waste money on saturated audiences.
+              Knowing when a channel has topped out so you stop burning cash. Every channel reaches a point where pouring in more money delivers diminishing incremental buyers because you are paying to reach the same saturated audience. 
+              <span class="text-white font-medium">Adstock identifies your channel growth ceilings</span> before budget is wasted.
             </p>
 
-            <!-- Visual Saturation Curve Card -->
-            <div class="p-4 rounded-xl bg-obsidian border border-white/10 space-y-3 font-mono text-xs">
+            <div class="p-4 rounded-xl bg-surface-card border border-white/10 space-y-3 font-mono text-xs">
               <div class="flex items-center justify-between text-slate-400">
-                <span>Saturation Curve</span>
-                <span class="text-amber-400 font-semibold">Diminishing Returns</span>
+                <span>Channel Efficiency</span>
+                <span class="text-amber-400 font-semibold">Ceiling Threshold</span>
               </div>
-              <div class="h-20 w-full relative flex items-end justify-between gap-1 pt-4 pb-1">
-                <div class="w-1/6 bg-emerald-500/40 rounded-t h-[30%]"></div>
-                <div class="w-1/6 bg-emerald-500/70 rounded-t h-[65%]"></div>
-                <div class="w-1/6 bg-emerald-400 rounded-t h-[92%] relative">
-                  <div class="absolute -top-4 left-1/2 -translate-x-1/2 text-[9px] text-emerald-400 font-bold">Optimal</div>
+              <div class="h-16 w-full flex items-end justify-between gap-1.5 pt-3 pb-1">
+                <div class="w-1/5 bg-emerald-500/40 rounded-t h-[35%]"></div>
+                <div class="w-1/5 bg-emerald-500/70 rounded-t h-[70%]"></div>
+                <div class="w-1/5 bg-emerald-400 rounded-t h-[95%] relative">
+                  <span class="absolute -top-4 left-1/2 -translate-x-1/2 text-[9px] text-emerald-400 font-bold">Optimal</span>
                 </div>
-                <div class="w-1/6 bg-amber-400 rounded-t h-[95%]"></div>
-                <div class="w-1/6 bg-red-400/80 rounded-t h-[97%]"></div>
-                <div class="w-1/6 bg-red-500 rounded-t h-[98%]"></div>
+                <div class="w-1/5 bg-amber-400 rounded-t h-[96%]"></div>
+                <div class="w-1/5 bg-red-400 rounded-t h-[97%]"></div>
               </div>
               <div class="flex justify-between text-[10px] text-slate-500 border-t border-white/5 pt-1.5">
                 <span>Low Spend</span>
-                <span class="text-emerald-400 font-bold">Inflection Peak</span>
-                <span class="text-red-400 font-bold">Pure Waste</span>
+                <span class="text-emerald-400 font-bold">Peak Yield</span>
+                <span class="text-red-400 font-bold">Ceiling Burn</span>
               </div>
             </div>
           </div>
 
           <div class="mt-6 pt-4 border-t border-white/5 text-xs font-mono text-slate-400 flex items-center gap-1.5">
             <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i>
-            <span>Rule: Stop funding negative marginal returns.</span>
+            <span>Rule: Stop funding exhausted audiences.</span>
           </div>
         </div>
 
-        <!-- Card 2: Measure the Lag Effect (Adstock Decay) -->
-        <div class="rounded-2xl bg-surface-card border border-white/10 p-7 flex flex-col justify-between hover:border-emerald-500/40 transition-all group">
+        <!-- Pillar 2: Ad Carryover & Momentum -->
+        <div class="rounded-2xl bg-obsidian border border-white/10 p-7 flex flex-col justify-between hover:border-emerald-500/40 transition-all group">
           <div>
             <div class="w-12 h-12 rounded-xl bg-surface-elevated border border-white/10 flex items-center justify-center text-emerald-400 font-mono font-bold text-lg mb-6 group-hover:border-emerald-500/50 transition-colors">
               02
             </div>
 
             <h3 class="text-xl font-bold text-white mb-3">
-              Measure the Lag Effect
+              Ad Carryover & Momentum
             </h3>
 
-            <!-- Plain English Explanation -->
             <p class="text-sm text-slate-300 leading-relaxed mb-6">
-              An ad seen on Connected TV or YouTube today doesn't just create sales in the first 5 minutes. It lingers in the customer's mind and triggers purchases 3 days, 10 days, or 3 weeks later. 
-              <span class="text-white font-medium">If your dashboard only counts immediate clicks, you will mistakenly kill your highest-impact brand campaigns.</span> We measure the real tail.
+              Give fair credit to brand and upper-funnel campaigns that build sales over weeks. High-impact video, Connected TV, and brand creative linger in consumer consideration long after the initial impression. 
+              <span class="text-white font-medium">Adstock captures the true momentum tail of every channel</span> so you don't defund your primary growth drivers.
             </p>
 
-            <!-- Visual Adstock Decay Timeline -->
-            <div class="p-4 rounded-xl bg-obsidian border border-white/10 space-y-3 font-mono text-xs">
+            <div class="p-4 rounded-xl bg-surface-card border border-white/10 space-y-3 font-mono text-xs">
               <div class="flex items-center justify-between text-slate-400">
-                <span>Adstock Carryover Tail</span>
-                <span class="text-emerald-400 font-semibold">14-Day Memory</span>
+                <span>Observed Consideration Tail</span>
+                <span class="text-emerald-400 font-semibold">14-Day Carryover</span>
               </div>
               
-              <!-- Timeline nodes -->
               <div class="space-y-2 text-[11px]">
                 <div class="flex items-center justify-between">
-                  <span class="text-slate-400">Day 1: TV Impression</span>
+                  <span class="text-slate-400">Day 1: TV / Video Launch</span>
                   <span class="text-emerald-400">100% Impact</span>
                 </div>
                 <div class="w-full bg-surface-elevated rounded-full h-1.5 overflow-hidden">
@@ -866,7 +966,7 @@
                 </div>
 
                 <div class="flex items-center justify-between pt-1">
-                  <span class="text-slate-400">Day 7: Brand Consideration</span>
+                  <span class="text-slate-400">Day 7: Consideration Search</span>
                   <span class="text-emerald-400/80">64% Residual</span>
                 </div>
                 <div class="w-full bg-surface-elevated rounded-full h-1.5 overflow-hidden">
@@ -874,7 +974,7 @@
                 </div>
 
                 <div class="flex items-center justify-between pt-1">
-                  <span class="text-slate-400">Day 14: Direct Checkout</span>
+                  <span class="text-slate-400">Day 14: Direct Conversion</span>
                   <span class="text-emerald-400/50">28% Residual</span>
                 </div>
                 <div class="w-full bg-surface-elevated rounded-full h-1.5 overflow-hidden">
@@ -886,46 +986,44 @@
 
           <div class="mt-6 pt-4 border-t border-white/5 text-xs font-mono text-slate-400 flex items-center gap-1.5">
             <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i>
-            <span>Rule: Credit the seed, not just the harvest.</span>
+            <span>Rule: Credit the campaign that created demand.</span>
           </div>
         </div>
 
-        <!-- Card 3: Mathematical Portfolio Equalization -->
-        <div class="rounded-2xl bg-surface-card border border-white/10 p-7 flex flex-col justify-between hover:border-emerald-500/40 transition-all group">
+        <!-- Pillar 3: Boardroom-Ready Capital Allocation -->
+        <div class="rounded-2xl bg-obsidian border border-white/10 p-7 flex flex-col justify-between hover:border-emerald-500/40 transition-all group">
           <div>
             <div class="w-12 h-12 rounded-xl bg-surface-elevated border border-white/10 flex items-center justify-center text-emerald-400 font-mono font-bold text-lg mb-6 group-hover:border-emerald-500/50 transition-colors">
               03
             </div>
 
             <h3 class="text-xl font-bold text-white mb-3">
-              Mathematical Portfolio Equalization
+              Boardroom-Ready Capital Allocation
             </h3>
 
-            <!-- Plain English Explanation -->
             <p class="text-sm text-slate-300 leading-relaxed mb-6">
-              Think of your media budget like a financial investment portfolio. Our solver mathematically redistributes your dollars until 
-              <span class="text-white font-medium">the marginal return of the very last dollar spent on TV equals the return on Search, Social, and Video.</span> 
-              That is how you generate millions in incremental revenue without spending an extra cent.
+              Portfolio balance that maximizes enterprise profit. Just like modern investment portfolios, your media budget should be balanced across channels so that 
+              <span class="text-white font-medium">the marginal return of the last dollar spent on TV matches the return on Search and Social.</span> 
+              That is how you unlock millions in revenue without expanding budget.
             </p>
 
-            <!-- Visual Equalization Matrix -->
-            <div class="p-4 rounded-xl bg-obsidian border border-white/10 space-y-2.5 font-mono text-xs">
+            <div class="p-4 rounded-xl bg-surface-card border border-white/10 space-y-2.5 font-mono text-xs">
               <div class="flex items-center justify-between text-slate-400 pb-1 border-b border-white/5">
                 <span>Channel Equilibrium</span>
-                <span class="text-emerald-400">Marginal ROI Equalized</span>
+                <span class="text-emerald-400">Marginal Return Equalized</span>
               </div>
               
               <div class="flex items-center justify-between text-[11px]">
                 <span class="text-slate-300">Marginal CTV Dollar:</span>
-                <span class="text-emerald-400 font-bold">$2.84 Return</span>
+                <span class="text-emerald-400 font-bold">$2.84 Yield</span>
               </div>
               <div class="flex items-center justify-between text-[11px]">
-                <span class="text-slate-300">Marginal Meta Dollar:</span>
-                <span class="text-emerald-400 font-bold">$2.84 Return</span>
+                <span class="text-slate-300">Marginal Social Dollar:</span>
+                <span class="text-emerald-400 font-bold">$2.84 Yield</span>
               </div>
               <div class="flex items-center justify-between text-[11px]">
-                <span class="text-slate-300">Marginal Google Dollar:</span>
-                <span class="text-emerald-400 font-bold">$2.84 Return</span>
+                <span class="text-slate-300">Marginal Search Dollar:</span>
+                <span class="text-emerald-400 font-bold">$2.84 Yield</span>
               </div>
               <div class="p-2 rounded bg-emerald-500/10 border border-emerald-500/20 text-[10px] text-emerald-300 text-center font-bold">
                 Portfolio Equilibrium Reached (Zero Waste)
@@ -935,7 +1033,7 @@
 
           <div class="mt-6 pt-4 border-t border-white/5 text-xs font-mono text-slate-400 flex items-center gap-1.5">
             <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i>
-            <span>Rule: Every single dollar works equally hard.</span>
+            <span>Rule: Every dollar achieves equal marginal productivity.</span>
           </div>
         </div>
 
@@ -946,44 +1044,45 @@
 
 
   <!-- ========================================================================= -->
-  <!-- 5. INTERACTIVE "WASTED SPEND" MINI-SIMULATOR -->
+  <!-- 6. EXECUTIVE ROI CALCULATOR -->
   <!-- ========================================================================= -->
-  <section id="calculator" class="py-20 sm:py-28 bg-surface border-y border-white/10 relative">
+  <section id="calculator" class="py-20 sm:py-28 bg-obsidian relative">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto mb-14">
         <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono uppercase tracking-wider mb-4">
           <i data-lucide="sliders" class="w-3.5 h-3.5"></i>
-          <span>Interactive Portfolio Simulator</span>
+          <span>Executive Impact Calculator</span>
         </div>
         <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4">
-          How much of your ad spend is leaking into saturated channels?
+          See the capital efficiency waiting in your media budget
         </h2>
         <p class="text-base sm:text-lg text-slate-300 leading-relaxed">
-          Slide your annual media budget below to estimate how much capital is trapped in diminishing returns and calculate your unlockable revenue upside.
+          Adjust your monthly marketing spend below to calculate estimated waste recovered from channel growth ceilings and projected marginal revenue lift.
         </p>
       </div>
 
       <!-- Simulator Card -->
-      <div class="rounded-2xl bg-obsidian border border-white/15 p-6 sm:p-10 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.9)] relative overflow-hidden">
+      <div class="rounded-2xl bg-surface-card border border-white/15 p-6 sm:p-10 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.9)] relative overflow-hidden">
         
-        <!-- Subtle Glow In Corner -->
         <div class="absolute -top-24 -right-24 w-72 h-72 bg-emerald-500/10 blur-[90px] rounded-full pointer-events-none"></div>
 
         <!-- Slider Header & Readout -->
         <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8">
           <div>
-            <label for="spend-slider" class="text-sm font-medium text-slate-300">
-              Your Annual Total Media Spend
+            <label for="spend-slider" class="text-sm font-semibold text-white">
+              Monthly Marketing Spend
             </label>
-            <div class="text-xs text-slate-500 mt-0.5">Adjust slider between $5M and $100M</div>
+            <div id="annual-equivalent" class="text-xs text-slate-400 mt-0.5">
+              Annual Pace: $24,000,000 / year
+            </div>
           </div>
-          <div class="flex items-baseline gap-2 bg-surface-card px-4 py-2 rounded-xl border border-white/10">
+          <div class="flex items-baseline gap-2 bg-obsidian px-4 py-2 rounded-xl border border-white/10">
             <span id="spend-display" class="text-2xl sm:text-3xl font-extrabold font-mono text-white tracking-tight">
-              $25,000,000
+              $2,000,000
             </span>
-            <span class="text-xs font-mono text-slate-400">/ year</span>
+            <span class="text-xs font-mono text-slate-400">/ mo</span>
           </div>
         </div>
 
@@ -992,103 +1091,103 @@
           <input 
             type="range" 
             id="spend-slider" 
-            min="5000000" 
-            max="100000000" 
-            step="1000000" 
-            value="25000000" 
+            min="400000" 
+            max="8500000" 
+            step="100000" 
+            value="2000000" 
             class="w-full cursor-pointer"
-            aria-label="Annual Media Spend Range Slider"
+            aria-label="Monthly Marketing Spend Range Slider"
           >
 
           <!-- Quick Presets -->
           <div class="flex flex-wrap items-center justify-between gap-2 pt-2 text-xs font-mono text-slate-400">
-            <span>$5M Min</span>
+            <span>$400k/mo Min</span>
             <div class="flex items-center gap-2">
-              <button type="button" onclick="setSpend(10000000)" class="px-2.5 py-1 rounded bg-surface-elevated hover:bg-surface-hover hover:text-white border border-white/5 transition">
-                $10M
+              <button type="button" onclick="setMonthlySpend(500000)" class="px-2.5 py-1 rounded bg-surface-elevated hover:bg-surface-hover hover:text-white border border-white/5 transition">
+                $500k/mo
               </button>
-              <button type="button" onclick="setSpend(25000000)" class="px-2.5 py-1 rounded bg-surface-elevated hover:bg-surface-hover hover:text-white border border-white/5 transition">
-                $25M
+              <button type="button" onclick="setMonthlySpend(1000000)" class="px-2.5 py-1 rounded bg-surface-elevated hover:bg-surface-hover hover:text-white border border-white/5 transition">
+                $1.0M/mo
               </button>
-              <button type="button" onclick="setSpend(50000000)" class="px-2.5 py-1 rounded bg-surface-elevated hover:bg-surface-hover hover:text-white border border-white/5 transition">
-                $50M
+              <button type="button" onclick="setMonthlySpend(2000000)" class="px-2.5 py-1 rounded bg-surface-elevated hover:bg-surface-hover hover:text-white border border-white/5 transition">
+                $2.0M/mo
               </button>
-              <button type="button" onclick="setSpend(100000000)" class="px-2.5 py-1 rounded bg-surface-elevated hover:bg-surface-hover hover:text-white border border-white/5 transition">
-                $100M
+              <button type="button" onclick="setMonthlySpend(4000000)" class="px-2.5 py-1 rounded bg-surface-elevated hover:bg-surface-hover hover:text-white border border-white/5 transition">
+                $4.0M/mo
               </button>
             </div>
-            <span>$100M Max</span>
+            <span>$8.5M/mo Max</span>
           </div>
         </div>
 
         <!-- Calculation Outputs (High Impact Grid) -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
           
-          <!-- Box 1: Estimated Saturation Waste -->
-          <div class="p-6 rounded-xl bg-surface-card border border-amber-500/30 relative">
+          <!-- Box 1: Projected Waste Recovered -->
+          <div class="p-6 rounded-xl bg-obsidian border border-amber-500/30 relative">
             <div class="flex items-center justify-between mb-2">
               <span class="text-xs font-mono text-amber-400 uppercase tracking-wider font-semibold flex items-center gap-1.5">
                 <i data-lucide="alert-triangle" class="w-4 h-4"></i>
-                Estimated Saturation Waste
+                Projected Waste Recovered
               </span>
               <span id="waste-percentage" class="text-xs font-mono px-2 py-0.5 rounded bg-amber-500/10 text-amber-300 border border-amber-500/20">
-                11.4% of budget
+                11.2% of budget
               </span>
             </div>
             <div id="waste-display" class="text-3xl sm:text-4xl font-extrabold font-mono text-amber-400 mb-2">
-              $2,850,000
+              $224,000 / mo
             </div>
             <p class="text-xs text-slate-400 leading-relaxed">
-              Ad dollars currently pumped into channels past their saturation point—generating near-zero marginal conversions due to frequency exhaustion.
+              Capital currently trapped past channel growth ceilings—generating near-zero marginal conversions due to frequency fatigue and audience saturation.
             </p>
           </div>
 
-          <!-- Box 2: Unlockable Incremental Revenue (Emerald Glow) -->
-          <div class="p-6 rounded-xl bg-surface-card border-2 border-emerald-500 shadow-glow-emerald relative">
+          <!-- Box 2: Estimated Marginal Revenue Lift (Emerald Glow) -->
+          <div class="p-6 rounded-xl bg-obsidian border-2 border-emerald-500 shadow-glow-emerald relative">
             <div class="flex items-center justify-between mb-2">
               <span class="text-xs font-mono text-emerald-400 uppercase tracking-wider font-bold flex items-center gap-1.5">
                 <i data-lucide="trending-up" class="w-4 h-4"></i>
-                Unlockable Incremental Revenue
+                Estimated Marginal Revenue Lift
               </span>
               <span class="text-xs font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-bold">
-                Net New Upside
+                Net Revenue Upside
               </span>
             </div>
             <div id="revenue-display" class="text-3xl sm:text-4xl font-extrabold font-mono text-emerald-400 mb-2">
-              +$4,125,000
+              +$342,000 / mo
             </div>
             <p class="text-xs text-slate-300 leading-relaxed">
-              Net revenue created purely by reallocating saturated capital into high-headroom channels (e.g. CTV, YouTube, retention) with zero budget increase.
+              Incremental revenue generated purely by reallocating saturated capital into high-headroom channels with zero budget increase.
             </p>
           </div>
 
         </div>
 
-        <!-- Channel Dynamic Allocation Preview -->
-        <div class="p-4 rounded-xl bg-surface-card border border-white/10 mb-8 space-y-3">
+        <!-- Estimated Reallocation Opportunity Breakdown -->
+        <div class="p-4 rounded-xl bg-obsidian border border-white/10 mb-8 space-y-3">
           <div class="flex items-center justify-between text-xs text-slate-400 pb-2 border-b border-white/5">
-            <span class="font-medium text-slate-300">Simulated Real-Time Reallocation Impact:</span>
-            <span class="font-mono text-emerald-400">Confidence Score: 98.6%</span>
+            <span class="font-medium text-slate-300">Estimated Reallocation Opportunity:</span>
+            <span class="font-mono text-emerald-400">Executive Confidence: 98.6%</span>
           </div>
           <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs font-mono">
-            <div class="p-2.5 rounded-lg bg-obsidian border border-white/5">
-              <span class="text-slate-500 block text-[10px]">Overspent Social</span>
-              <span id="social-cut" class="text-amber-400 font-bold text-sm">-$1,425,000</span>
-              <span class="text-slate-500 text-[10px] block mt-0.5">Reallocated to headroom</span>
+            <div class="p-2.5 rounded-lg bg-surface-card border border-white/5">
+              <span class="text-slate-400 block text-[10px]">Trim Saturated Social</span>
+              <span id="social-cut" class="text-amber-400 font-bold text-sm">-$112,000/mo</span>
+              <span class="text-slate-500 text-[10px] block mt-0.5">Stops ceiling waste</span>
             </div>
-            <div class="p-2.5 rounded-lg bg-obsidian border border-white/5">
-              <span class="text-slate-500 block text-[10px]">CTV Headroom Gain</span>
-              <span id="ctv-boost" class="text-emerald-400 font-bold text-sm">+$950,000</span>
-              <span class="text-slate-500 text-[10px] block mt-0.5">Captures 14d lag tail</span>
+            <div class="p-2.5 rounded-lg bg-surface-card border border-white/5">
+              <span class="text-slate-400 block text-[10px]">CTV Momentum Boost</span>
+              <span id="ctv-boost" class="text-emerald-400 font-bold text-sm">+$74,000/mo</span>
+              <span class="text-slate-500 text-[10px] block mt-0.5">Captures 14d halo</span>
             </div>
-            <div class="p-2.5 rounded-lg bg-obsidian border border-white/5">
-              <span class="text-slate-500 block text-[10px]">Video & Search Mix</span>
-              <span id="video-boost" class="text-emerald-400 font-bold text-sm">+$475,000</span>
-              <span class="text-slate-500 text-[10px] block mt-0.5">Balanced marginal yield</span>
+            <div class="p-2.5 rounded-lg bg-surface-card border border-white/5">
+              <span class="text-slate-400 block text-[10px]">Video & Search Mix</span>
+              <span id="video-boost" class="text-emerald-400 font-bold text-sm">+$38,000/mo</span>
+              <span class="text-slate-500 text-[10px] block mt-0.5">Balances marginal return</span>
             </div>
-            <div class="p-2.5 rounded-lg bg-obsidian border border-white/5">
-              <span class="text-slate-500 block text-[10px]">Efficiency Index</span>
-              <span class="text-white font-bold text-sm">+16.5% ROAS</span>
+            <div class="p-2.5 rounded-lg bg-surface-card border border-white/5">
+              <span class="text-slate-400 block text-[10px]">Capital Efficiency</span>
+              <span class="text-white font-bold text-sm">+15.8% ROAS</span>
               <span class="text-slate-500 text-[10px] block mt-0.5">Portfolio optimum</span>
             </div>
           </div>
@@ -1098,13 +1197,13 @@
         <div class="text-center pt-2">
           <a 
             id="calculator-cta" 
-            href="#demo" 
+            href="#walkthrough" 
             class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-bold text-obsidian bg-emerald-400 hover:bg-emerald-300 shadow-[0_0_30px_rgba(16,185,129,0.35)] hover:shadow-[0_0_40px_rgba(16,185,129,0.55)] transition-all duration-200 transform hover:-translate-y-0.5 text-base"
           >
-            <span>See where your $25,000,000 is leaking → Book an Audit</span>
+            <span>Request a Walkthrough for Your Budget →</span>
           </a>
-          <p class="text-xs text-slate-500 mt-3">
-            Takes 20 minutes to review. We map your exact saturation curve with your real media data.
+          <p class="text-xs text-slate-400 mt-3">
+            Takes 25 minutes. We review your actual channel growth ceilings and carryover potential under strict NDA.
           </p>
         </div>
 
@@ -1115,101 +1214,101 @@
 
 
   <!-- ========================================================================= -->
-  <!-- 6. ENTERPRISE DATA GOVERNANCE & INTEGRATIONS -->
+  <!-- 7. ENTERPRISE DATA ARCHITECTURE & INTEGRATIONS -->
   <!-- ========================================================================= -->
-  <section id="platform" class="py-20 sm:py-28 bg-obsidian relative">
+  <section id="platform" class="py-20 sm:py-28 bg-surface border-y border-white/10 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto mb-16">
         <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-800 border border-white/10 text-slate-300 text-xs font-mono uppercase tracking-wider mb-4">
-          Enterprise Security & Infrastructure
+          Data Architecture & Governance
         </div>
         <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight mb-5">
-          Built for your enterprise data stack. <br class="hidden sm:inline">Not another walled garden.
+          Built for your enterprise data stack. <br class="hidden sm:inline">Zero third-party risk.
         </h2>
         <p class="text-base sm:text-lg text-slate-300 leading-relaxed">
-          Adstock Labs runs directly inside your modern cloud infrastructure. Zero third-party cookies, zero fragile browser pixels, and 100% client-isolated data execution.
+          Adstock executes directly inside your existing cloud data warehouse. No third-party cookies, no privacy liabilities, and no proprietary data locks.
         </p>
       </div>
 
       <!-- Compatible Platforms / Badges Grid -->
       <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-3 mb-16">
         
-        <div class="p-4 rounded-xl bg-surface-card border border-white/10 flex flex-col items-center justify-center text-center hover:border-emerald-500/40 transition-colors">
+        <div class="p-4 rounded-xl bg-obsidian border border-white/10 flex flex-col items-center justify-center text-center hover:border-emerald-500/40 transition-colors">
           <i data-lucide="database" class="w-6 h-6 text-emerald-400 mb-2"></i>
           <span class="text-xs font-bold text-white">Snowflake</span>
           <span class="text-[10px] font-mono text-slate-400 mt-0.5">Snowpark Native</span>
         </div>
 
-        <div class="p-4 rounded-xl bg-surface-card border border-white/10 flex flex-col items-center justify-center text-center hover:border-emerald-500/40 transition-colors">
+        <div class="p-4 rounded-xl bg-obsidian border border-white/10 flex flex-col items-center justify-center text-center hover:border-emerald-500/40 transition-colors">
           <i data-lucide="cpu" class="w-6 h-6 text-emerald-400 mb-2"></i>
           <span class="text-xs font-bold text-white">BigQuery</span>
           <span class="text-[10px] font-mono text-slate-400 mt-0.5">Zero-ETL Engine</span>
         </div>
 
-        <div class="p-4 rounded-xl bg-surface-card border border-white/10 flex flex-col items-center justify-center text-center hover:border-emerald-500/40 transition-colors">
+        <div class="p-4 rounded-xl bg-obsidian border border-white/10 flex flex-col items-center justify-center text-center hover:border-emerald-500/40 transition-colors">
           <i data-lucide="hard-drive" class="w-6 h-6 text-emerald-400 mb-2"></i>
           <span class="text-xs font-bold text-white">Databricks</span>
           <span class="text-[10px] font-mono text-slate-400 mt-0.5">Lakehouse Optimized</span>
         </div>
 
-        <div class="p-4 rounded-xl bg-surface-card border border-white/10 flex flex-col items-center justify-center text-center hover:border-emerald-500/40 transition-colors">
+        <div class="p-4 rounded-xl bg-obsidian border border-white/10 flex flex-col items-center justify-center text-center hover:border-emerald-500/40 transition-colors">
           <i data-lucide="search" class="w-6 h-6 text-slate-300 mb-2"></i>
           <span class="text-xs font-bold text-white">Google Ads</span>
           <span class="text-[10px] font-mono text-slate-400 mt-0.5">SA360 & PMax</span>
         </div>
 
-        <div class="p-4 rounded-xl bg-surface-card border border-white/10 flex flex-col items-center justify-center text-center hover:border-emerald-500/40 transition-colors">
+        <div class="p-4 rounded-xl bg-obsidian border border-white/10 flex flex-col items-center justify-center text-center hover:border-emerald-500/40 transition-colors">
           <i data-lucide="share-2" class="w-6 h-6 text-slate-300 mb-2"></i>
           <span class="text-xs font-bold text-white">Meta Ads</span>
-          <span class="text-[10px] font-mono text-slate-400 mt-0.5">Graph & CAPI API</span>
+          <span class="text-[10px] font-mono text-slate-400 mt-0.5">CAPI & Graph API</span>
         </div>
 
-        <div class="p-4 rounded-xl bg-surface-card border border-white/10 flex flex-col items-center justify-center text-center hover:border-emerald-500/40 transition-colors">
+        <div class="p-4 rounded-xl bg-obsidian border border-white/10 flex flex-col items-center justify-center text-center hover:border-emerald-500/40 transition-colors">
           <i data-lucide="shopping-cart" class="w-6 h-6 text-slate-300 mb-2"></i>
           <span class="text-xs font-bold text-white">Amazon Ads</span>
-          <span class="text-[10px] font-mono text-slate-400 mt-0.5">DSP & Sponsored</span>
+          <span class="text-[10px] font-mono text-slate-400 mt-0.5">DSP & Retail Media</span>
         </div>
 
-        <div class="p-4 rounded-xl bg-surface-card border border-white/10 flex flex-col items-center justify-center text-center hover:border-emerald-500/40 transition-colors col-span-2 sm:col-span-1">
+        <div class="p-4 rounded-xl bg-obsidian border border-white/10 flex flex-col items-center justify-center text-center hover:border-emerald-500/40 transition-colors col-span-2 sm:col-span-1">
           <i data-lucide="radio" class="w-6 h-6 text-emerald-400 mb-2"></i>
           <span class="text-xs font-bold text-white">Trade Desk</span>
-          <span class="text-[10px] font-mono text-slate-400 mt-0.5">UID 2.0 & CTV</span>
+          <span class="text-[10px] font-mono text-slate-400 mt-0.5">Connected TV</span>
         </div>
 
       </div>
 
-      <!-- Clean Security Callouts Grid -->
+      <!-- Security Callouts Grid -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
-        <div class="p-6 rounded-2xl bg-surface-card border border-white/10">
-          <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-4">
-            <i data-lucide="eye-off" class="w-5 h-5"></i>
-          </div>
-          <h3 class="text-lg font-bold text-white mb-2">Zero Synthetic Imputation</h3>
-          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-            We never generate synthetic customer personas, simulate fake purchases, or calibrate models with artificial Bayesian priors. Adstock Labs models purely observed enterprise media pacing and real conversion records.
-          </p>
-        </div>
-
-        <div class="p-6 rounded-2xl bg-surface-card border border-white/10">
+        <div class="p-6 rounded-2xl bg-obsidian border border-white/10">
           <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-4">
             <i data-lucide="shield-check" class="w-5 h-5"></i>
           </div>
-          <h3 class="text-lg font-bold text-white mb-2">SOC 2 Type II Architecture</h3>
+          <h3 class="text-lg font-bold text-white mb-2">Zero Synthetic Imputation</h3>
           <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-            Enterprise-grade TLS 1.3 encryption in transit and AES-256 at rest. Comprehensive role-based access control (RBAC) and automated audit logs meet strict Fortune 500 infosec and compliance requirements.
+            We never generate synthetic customer personas, simulate fake conversions, or force arbitrary assumptions. Adstock models purely observed revenue, pacing, and incremental performance.
           </p>
         </div>
 
-        <div class="p-6 rounded-2xl bg-surface-card border border-white/10">
+        <div class="p-6 rounded-2xl bg-obsidian border border-white/10">
           <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-4">
             <i data-lucide="lock" class="w-5 h-5"></i>
           </div>
+          <h3 class="text-lg font-bold text-white mb-2">SOC 2 Type II Architecture</h3>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            Enterprise TLS 1.3 encryption in transit and AES-256 at rest. Comprehensive role-based access control (RBAC) and automated audit logs satisfy strict Fortune 500 infosec guidelines.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-obsidian border border-white/10">
+          <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-4">
+            <i data-lucide="server" class="w-5 h-5"></i>
+          </div>
           <h3 class="text-lg font-bold text-white mb-2">Client-Owned Data Isolation</h3>
           <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-            Our solver executes directly within your dedicated virtual private cloud (VPC) or data warehouse environment. Your first-party customer records and media investment strategies never leave your perimeter.
+            Adstock executes directly inside your virtual private cloud (VPC) or secure data warehouse. Your customer transactions and media investment data never leave your boundary.
           </p>
         </div>
 
@@ -1220,9 +1319,9 @@
 
 
   <!-- ========================================================================= -->
-  <!-- 7. LEAD CAPTURE & FOOTER -->
+  <!-- 8. LEAD CAPTURE & FOOTER -->
   <!-- ========================================================================= -->
-  <section id="demo" class="py-20 sm:py-28 bg-surface border-t border-white/10 relative overflow-hidden">
+  <section id="walkthrough" class="py-20 sm:py-28 bg-obsidian border-t border-white/10 relative overflow-hidden">
     
     <!-- Background Glow -->
     <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-emerald-500/10 blur-[130px] rounded-full pointer-events-none -z-10"></div>
@@ -1234,39 +1333,39 @@
         <!-- Left Side Copy -->
         <div class="lg:col-span-5 text-left space-y-6">
           <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono">
-            <span>Executive Media Audit</span>
+            <span>Executive Media Walkthrough</span>
           </div>
           <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
-            See your exact saturation curve in 48 hours.
+            See where your ad capital is hitting a wall.
           </h2>
           <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
-            Schedule a confidential 25-minute consultation with our Principal Portfolio Scientists. We will analyze your current media mix and reveal where diminishing returns are eroding your margin.
+            Schedule a confidential 25-minute executive walkthrough with our Principal Portfolio Team. We will review your media mix and demonstrate how Adstock identifies channel growth ceilings and ad carryover momentum.
           </p>
 
           <div class="space-y-3 pt-2 text-xs sm:text-sm text-slate-300">
             <div class="flex items-center gap-2.5">
               <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
-              <span>Channel-by-channel diminishing returns audit</span>
+              <span>Channel growth ceiling & saturation analysis</span>
             </div>
             <div class="flex items-center gap-2.5">
               <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
-              <span>Carryover decay half-life analysis (TV, Video, Social)</span>
+              <span>Ad carryover & momentum measurement (TV, Video, Social)</span>
             </div>
             <div class="flex items-center gap-2.5">
               <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
-              <span>Instant portfolio reallocation roadmap</span>
+              <span>Boardroom-ready portfolio reallocation roadmap</span>
             </div>
           </div>
 
-          <div class="p-4 rounded-xl bg-obsidian border border-white/10 text-xs text-slate-400 flex items-center gap-3">
-            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span>Enterprise SLA: Direct response within 4 business hours.</span>
+          <div class="p-4 rounded-xl bg-surface-card border border-white/10 text-xs text-slate-400 flex items-center gap-3">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            <span>Enterprise SLA: Guaranteed response within 4 business hours.</span>
           </div>
         </div>
 
-        <!-- Right Side: High-Contrast Demo Request Form -->
+        <!-- Right Side: High-Contrast Walkthrough Request Form -->
         <div class="lg:col-span-7">
-          <div class="rounded-2xl bg-obsidian border border-white/15 p-6 sm:p-8 shadow-[0_20px_50px_rgba(0,0,0,0.8)] relative">
+          <div class="rounded-2xl bg-surface-card border border-white/15 p-6 sm:p-8 shadow-[0_20px_50px_rgba(0,0,0,0.8)] relative">
             
             <form id="lead-form" onsubmit="handleDemoSubmit(event)" class="space-y-5">
               
@@ -1280,7 +1379,7 @@
                     id="full-name" 
                     required 
                     placeholder="Sarah Jenkins" 
-                    class="w-full px-3.5 py-2.5 rounded-lg bg-surface-card border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400 transition"
+                    class="w-full px-3.5 py-2.5 rounded-lg bg-obsidian border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400 transition"
                   >
                 </div>
                 <div>
@@ -1292,7 +1391,7 @@
                     id="work-email" 
                     required 
                     placeholder="sjenkins@enterprise.com" 
-                    class="w-full px-3.5 py-2.5 rounded-lg bg-surface-card border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400 transition"
+                    class="w-full px-3.5 py-2.5 rounded-lg bg-obsidian border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400 transition"
                   >
                 </div>
               </div>
@@ -1307,17 +1406,17 @@
                     id="company-name" 
                     required 
                     placeholder="Acme Global Inc." 
-                    class="w-full px-3.5 py-2.5 rounded-lg bg-surface-card border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400 transition"
+                    class="w-full px-3.5 py-2.5 rounded-lg bg-obsidian border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400 transition"
                   >
                 </div>
                 <div>
                   <label for="media-spend" class="block text-xs font-medium text-slate-300 mb-1.5">
-                    Annual Media Spend *
+                    Annual Media Budget *
                   </label>
                   <select 
                     id="media-spend" 
                     required 
-                    class="w-full px-3.5 py-2.5 rounded-lg bg-surface-card border border-white/10 text-white text-sm focus:outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400 transition"
+                    class="w-full px-3.5 py-2.5 rounded-lg bg-obsidian border border-white/10 text-white text-sm focus:outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400 transition"
                   >
                     <option value="tier-10m">&lt; $10M / year</option>
                     <option value="tier-10-50m" selected>$10M – $50M / year</option>
@@ -1327,17 +1426,17 @@
               </div>
 
               <div>
-                <label for="primary-challenge" class="block text-xs font-medium text-slate-300 mb-1.5">
-                  Primary Attribution & Media Challenge
+                <label for="primary-role" class="block text-xs font-medium text-slate-300 mb-1.5">
+                  Your Role / Team Focus
                 </label>
                 <select 
-                  id="primary-challenge" 
-                  class="w-full px-3.5 py-2.5 rounded-lg bg-surface-card border border-white/10 text-white text-sm focus:outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400 transition"
+                  id="primary-role" 
+                  class="w-full px-3.5 py-2.5 rounded-lg bg-obsidian border border-white/10 text-white text-sm focus:outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400 transition"
                 >
-                  <option value="saturation">Channel saturation & diminishing returns</option>
-                  <option value="last-touch">Broken last-touch / click attribution</option>
-                  <option value="agency-mmm">Slow 3-month agency MMM consulting cycles</option>
-                  <option value="cfo-alignment">Board & CFO budget justification</option>
+                  <option value="cmo">CMO / Marketing Leadership</option>
+                  <option value="cfo">CFO / Finance & FP&A</option>
+                  <option value="exec">Executive / Board Governance</option>
+                  <option value="media-lead">Media & Attribution Lead</option>
                 </select>
               </div>
 
@@ -1346,24 +1445,24 @@
                 id="submit-btn" 
                 class="w-full py-3.5 px-6 rounded-xl font-bold text-obsidian bg-emerald-400 hover:bg-emerald-300 shadow-[0_0_25px_rgba(16,185,129,0.35)] hover:shadow-[0_0_35px_rgba(16,185,129,0.55)] transition-all duration-200 transform hover:-translate-y-0.5 text-sm flex items-center justify-center gap-2"
               >
-                <span>Request Executive Demo & Media Audit</span>
+                <span>Request a Walkthrough</span>
                 <i data-lucide="arrow-right" class="w-4 h-4 stroke-[2.5]"></i>
               </button>
 
-              <div class="text-[11px] text-center text-slate-500 pt-1">
-                Zero spam. Strict enterprise NDA guaranteed. Client data stays isolated.
+              <div class="text-[11px] text-center text-slate-400 pt-1">
+                Zero spam. Strict enterprise NDA guaranteed. First-party data stays isolated.
               </div>
 
             </form>
 
-            <!-- Success Confirmation Screen (Revealed on Submit) -->
+            <!-- Success Confirmation Screen -->
             <div id="form-success" class="hidden text-center py-10 space-y-4">
               <div class="w-14 h-14 rounded-full bg-emerald-500/20 border border-emerald-400 flex items-center justify-center text-emerald-400 mx-auto shadow-[0_0_25px_rgba(16,185,129,0.5)]">
                 <i data-lucide="check-circle-2" class="w-8 h-8"></i>
               </div>
-              <h3 class="text-xl font-bold text-white">Media Audit Request Confirmed</h3>
+              <h3 class="text-xl font-bold text-white">Walkthrough Request Confirmed</h3>
               <p class="text-xs sm:text-sm text-slate-300 max-w-md mx-auto leading-relaxed">
-                Thank you. A Principal Portfolio Scientist has been assigned to your account and will reach out with preliminary saturation models within 4 business hours.
+                Thank you. A Principal Portfolio Specialist has been assigned to your account and will contact you within 4 business hours with your preliminary allocation overview.
               </p>
               <div class="pt-2">
                 <button 
@@ -1396,21 +1495,21 @@
             <div class="w-7 h-7 rounded-lg bg-surface-elevated border border-emerald-500/30 flex items-center justify-center text-emerald-400">
               <i data-lucide="layers" class="w-3.5 h-3.5 text-emerald-400"></i>
             </div>
-            <span class="font-bold text-lg tracking-tight text-white">
-              Adstock<span class="text-emerald-400">Labs</span>
+            <span class="font-bold text-xl tracking-tight text-white">
+              Adstock
             </span>
           </div>
           <p class="text-xs font-mono text-slate-400">
-            Continuous Marketing Portfolio Intelligence • adstocklabs.com
+            Portfolio Intelligence for Marketing & Finance Leaders • adstocklabs.com
           </p>
         </div>
 
         <!-- System Status Indicator -->
         <div class="flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-card border border-white/10 text-xs font-mono">
-          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
           <span class="text-slate-300">All Systems Operational</span>
           <span class="text-slate-500">•</span>
-          <span class="text-slate-400">Engine v1.4.2</span>
+          <span class="text-slate-400">Enterprise Engine</span>
         </div>
 
       </div>
@@ -1420,27 +1519,27 @@
         <div>
           <div class="font-mono text-slate-400 uppercase tracking-wider mb-3">Platform</div>
           <ul class="space-y-2 text-slate-400">
-            <li><a href="#platform" class="hover:text-emerald-400 transition">Continuous Calibration</a></li>
-            <li><a href="#how-it-works" class="hover:text-emerald-400 transition">Adstock Decay Solver</a></li>
+            <li><a href="#platform" class="hover:text-emerald-400 transition">Continuous Allocation</a></li>
+            <li><a href="#dual-power" class="hover:text-emerald-400 transition">The Adstock Principle</a></li>
             <li><a href="#platform" class="hover:text-emerald-400 transition">Warehouse Native (VPC)</a></li>
-            <li><a href="#comparison" class="hover:text-emerald-400 transition">Comparison Matrix</a></li>
+            <li><a href="#why-adstock" class="hover:text-emerald-400 transition">Comparison Matrix</a></li>
           </ul>
         </div>
 
         <div>
-          <div class="font-mono text-slate-400 uppercase tracking-wider mb-3">Resources</div>
+          <div class="font-mono text-slate-400 uppercase tracking-wider mb-3">Executive</div>
           <ul class="space-y-2 text-slate-400">
-            <li><a href="#calculator" class="hover:text-emerald-400 transition">Wasted Spend Simulator</a></li>
-            <li><a href="#demo" class="hover:text-emerald-400 transition">Executive Audit Whitepaper</a></li>
-            <li><a href="#how-it-works" class="hover:text-emerald-400 transition">The Saturation Curve</a></li>
-            <li><a href="#demo" class="hover:text-emerald-400 transition">Portfolio Equalization FAQ</a></li>
+            <li><a href="#calculator" class="hover:text-emerald-400 transition">ROI Impact Calculator</a></li>
+            <li><a href="#walkthrough" class="hover:text-emerald-400 transition">Schedule a Walkthrough</a></li>
+            <li><a href="#executive-impact" class="hover:text-emerald-400 transition">Growth Ceilings Guide</a></li>
+            <li><a href="#dual-power" class="hover:text-emerald-400 transition">Ad Carryover Analysis</a></li>
           </ul>
         </div>
 
         <div>
-          <div class="font-mono text-slate-400 uppercase tracking-wider mb-3">Security & Legal</div>
+          <div class="font-mono text-slate-400 uppercase tracking-wider mb-3">Governance & Legal</div>
           <ul class="space-y-2 text-slate-400">
-            <li><a href="#platform" class="hover:text-emerald-400 transition">SOC 2 Type II Portal</a></li>
+            <li><a href="#platform" class="hover:text-emerald-400 transition">SOC 2 Type II Architecture</a></li>
             <li><a href="#platform" class="hover:text-emerald-400 transition">Client Data Isolation</a></li>
             <li><a href="#" class="hover:text-emerald-400 transition">Privacy Policy</a></li>
             <li><a href="#" class="hover:text-emerald-400 transition">Terms of Service</a></li>
@@ -1448,12 +1547,12 @@
         </div>
 
         <div>
-          <div class="font-mono text-slate-400 uppercase tracking-wider mb-3">Headquarters</div>
+          <div class="font-mono text-slate-400 uppercase tracking-wider mb-3">Corporate</div>
           <p class="text-slate-400 leading-relaxed">
             Adstock Labs, Inc.<br>
             548 Market St, Suite 48210<br>
             San Francisco, CA 94104<br>
-            <span class="text-emerald-400">enterprise@adstocklabs.com</span>
+            <span class="text-emerald-400">executive@adstocklabs.com</span>
           </p>
         </div>
       </div>
@@ -1464,7 +1563,7 @@
           &copy; 2026 Adstock Labs, Inc. All rights reserved.
         </div>
         <div class="font-mono text-[11px] text-slate-500">
-          Precision Econometric Intelligence for Enterprise Media Portfolios.
+          Portfolio Intelligence for Enterprise Media Capital.
         </div>
       </div>
 
@@ -1505,9 +1604,10 @@
       }
     }
 
-    // Interactive Wasted Spend Mini-Simulator
+    // Interactive Executive Impact Calculator
     const slider = document.getElementById("spend-slider");
     const spendDisplay = document.getElementById("spend-display");
+    const annualEquivalent = document.getElementById("annual-equivalent");
     const wasteDisplay = document.getElementById("waste-display");
     const wastePercentage = document.getElementById("waste-percentage");
     const revenueDisplay = document.getElementById("revenue-display");
@@ -1522,36 +1622,37 @@
       return "$" + Math.round(val).toLocaleString("en-US");
     }
 
-    function updateCalculations(spend) {
-      // Dynamic Waste Rate: between 9.5% and 13.5% based on budget scale (higher budget = greater saturation waste)
-      // Base scale: $25M has ~11.4% waste
-      const wasteRatio = 0.095 + (Math.min(spend, 100000000) / 100000000) * 0.035; // 9.5% to 13.0%
-      const wasteDollars = spend * wasteRatio;
+    function updateCalculations(monthlySpend) {
+      const annualSpend = monthlySpend * 12;
       
-      // Incremental revenue unlocked by shifting saturated spend to high headroom channels:
-      // Typically 1.45x to 1.65x the shifted waste in incremental top-line revenue
-      const revenueMultiplier = 1.45 + (1 - (spend / 150000000)) * 0.15;
-      const revenueGain = wasteDollars * revenueMultiplier;
+      // Dynamic Waste Rate: between 9.5% and 13.0% based on spend scale
+      const wasteRatio = 0.095 + (Math.min(annualSpend, 100000000) / 100000000) * 0.035;
+      const monthlyWaste = monthlySpend * wasteRatio;
+      
+      // Marginal revenue lift multiplier: 1.45x to 1.60x of the reallocated waste
+      const revenueMultiplier = 1.45 + (1 - (annualSpend / 150000000)) * 0.15;
+      const monthlyRevenueGain = monthlyWaste * revenueMultiplier;
 
       // Update DOM
-      spendDisplay.textContent = formatDollar(spend);
-      wasteDisplay.textContent = formatDollar(wasteDollars);
+      spendDisplay.textContent = formatDollar(monthlySpend);
+      annualEquivalent.textContent = "Annual Pace: " + formatDollar(annualSpend) + " / year";
+      wasteDisplay.textContent = formatDollar(monthlyWaste) + " / mo";
       wastePercentage.textContent = (wasteRatio * 100).toFixed(1) + "% of budget";
-      revenueDisplay.textContent = "+" + formatDollar(revenueGain);
+      revenueDisplay.textContent = "+" + formatDollar(monthlyRevenueGain) + " / mo";
 
-      // Channel allocation shifts
-      socialCut.textContent = "-" + formatDollar(wasteDollars * 0.50);
-      ctvBoost.textContent = "+" + formatDollar(wasteDollars * 0.33);
-      videoBoost.textContent = "+" + formatDollar(wasteDollars * 0.17);
+      // Reallocation breakdown
+      socialCut.textContent = "-" + formatDollar(monthlyWaste * 0.50) + "/mo";
+      ctvBoost.textContent = "+" + formatDollar(monthlyWaste * 0.33) + "/mo";
+      videoBoost.textContent = "+" + formatDollar(monthlyWaste * 0.17) + "/mo";
 
-      // Update dynamic CTA button text
-      calcCta.innerHTML = `<span>See where your ${formatDollar(spend)} is leaking → Book an Audit</span>`;
+      // Dynamic CTA Button Text
+      calcCta.innerHTML = `<span>Request a Walkthrough for ${formatDollar(annualSpend)} Budget →</span>`;
 
       // Update lead capture select element to mirror the slider
       if (mediaSpendSelect) {
-        if (spend < 10000000) {
+        if (annualSpend < 10000000) {
           mediaSpendSelect.value = "tier-10m";
-        } else if (spend <= 50000000) {
+        } else if (annualSpend <= 50000000) {
           mediaSpendSelect.value = "tier-10-50m";
         } else {
           mediaSpendSelect.value = "tier-50m-plus";
@@ -1568,7 +1669,7 @@
       updateCalculations(Number(slider.value));
     }
 
-    function setSpend(amount) {
+    function setMonthlySpend(amount) {
       if (!slider) return;
       slider.value = amount;
       updateCalculations(amount);
