@@ -12,6 +12,9 @@
   <meta property="og:description" content="Most companies spend millions on marketing without knowing which channels actually drive revenue. Adstock finds where your ads stop working and where to reallocate for maximum profit.">
   <meta property="og:url" content="https://adstocklabs.com">
   <meta name="theme-color" content="#FBFBFA">
+  
+  <!-- Favicon: Clean Vector SVG Monogram -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='none'%3E%3Cpath d='M6 26 L16 6' stroke='%230F5132' stroke-width='3.5' stroke-linecap='round'/%3E%3Cpath d='M10.25 17.5 L19.5 17.5' stroke='%230F5132' stroke-width='3.5' stroke-linecap='round'/%3E%3Cpath d='M16 6 C17.2 13, 19.5 21, 26.5 25.5' stroke='%23059669' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E">
 
   <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -119,6 +122,84 @@
       border: 3px solid #FFFFFF;
       transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
+
+    /* ========================================================================= */
+    /* ADSTOCK GEOMETRIC VECTOR MONOGRAM & CURSOR-STYLE HOVER INTERACTION */
+    /* ========================================================================= */
+    .nav-logo {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .adstock-mark {
+      overflow: visible;
+      flex-shrink: 0;
+    }
+
+    /* Base Growth Structure: Upward-sloping solid bar and tangent cross-tie */
+    .adstock-mark .growth-bar,
+    .adstock-mark .crosstie {
+      stroke: #0F5132;
+      stroke-width: 3.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+      transition: stroke 0.3s ease;
+    }
+
+    /* State 1: Media Momentum Carryover (Adstock Decaying Curve in Emerald Green) */
+    .adstock-mark .decay-curve {
+      stroke: #059669;
+      stroke-width: 3.5;
+      stroke-linecap: round;
+      fill: none;
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1), transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* State 2: Optimized Marginal Return Curve (The Tipping Point) */
+    .adstock-mark .tipping-curve {
+      stroke: #059669;
+      stroke-width: 3.5;
+      stroke-linecap: round;
+      fill: none;
+      opacity: 0;
+      stroke-dasharray: 24;
+      stroke-dashoffset: 24;
+      transition: opacity 0.2s ease, stroke-dashoffset 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Tipping Point Calibration Marker Dot */
+    .adstock-mark .tipping-dot {
+      fill: #059669;
+      opacity: 0;
+      transform-box: fill-box;
+      transform-origin: center;
+      transform: scale(0);
+      transition: opacity 0.25s ease 0.35s, transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) 0.35s;
+    }
+
+    /* Cursor-Style Hover Interaction */
+    .nav-logo:hover .adstock-mark .decay-curve,
+    .group:hover .adstock-mark .decay-curve {
+      opacity: 0;
+      transform: translateY(1px);
+    }
+
+    .nav-logo:hover .adstock-mark .tipping-curve,
+    .group:hover .adstock-mark .tipping-curve {
+      opacity: 1;
+      stroke-dashoffset: 0;
+    }
+
+    .nav-logo:hover .adstock-mark .tipping-dot,
+    .group:hover .adstock-mark .tipping-dot {
+      opacity: 1;
+      transform: scale(1);
+    }
   </style>
 </head>
 <body class="min-h-screen bg-ivory-50 text-gray-900 antialiased selection:bg-brand-border selection:text-brand-dark">
@@ -132,16 +213,20 @@
         
         <!-- Left: Logo & Wordmark -->
         <div class="flex items-center gap-3">
-          <a href="#" class="flex items-center gap-2.5 group">
-            <!-- Custom Geometric Monogram SVG: Ascending Growth Bars + Adstock Momentum Curve -->
-            <svg class="w-8 h-8 rounded-lg shadow-sm transition-transform group-hover:scale-105" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="32" height="32" rx="8" fill="#0F5132"/>
-              <!-- Ascending growth bars -->
-              <rect x="7" y="16" width="3.5" height="9" rx="1.2" fill="#6EE7B7"/>
-              <rect x="13" y="11" width="3.5" height="14" rx="1.2" fill="#34D399"/>
-              <!-- Adstock momentum carryover curve -->
-              <path d="M 7 19 C 13 7, 19 8, 25 14" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/>
-              <circle cx="25" cy="14" r="2" fill="#FFFFFF"/>
+          <a href="#" class="nav-logo flex items-center gap-2.5 group" aria-label="Adstock Home">
+            <!-- Custom Geometric Monogram SVG: Ascending Growth Bar + Decaying/Optimized Curve -->
+            <svg class="adstock-mark w-7.5 h-7.5 sm:w-8 sm:h-8 transition-transform duration-200 group-hover:scale-105" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Base Growth Structure: Upward-sloping solid bar and tangent cross-tie (Forest Green #0F5132) -->
+              <path class="growth-bar" d="M 6 26 L 16 6" />
+              <path class="crosstie" d="M 10.25 17.5 L 19.5 17.5" />
+
+              <!-- State 1: Media Momentum Carryover (Adstock Decaying Curve in Emerald Green #059669) -->
+              <path class="decay-curve" d="M 16 6 C 17.2 13, 19.5 21, 26.5 25.5" />
+
+              <!-- State 2: Optimized Marginal Return Curve (The Tipping Point) -->
+              <path class="tipping-curve" d="M 10.25 17.5 C 13 11.5, 18 10.5, 26.5 10.5" />
+              <!-- Tipping Point Calibration Marker Dot -->
+              <circle class="tipping-dot" cx="18" cy="10.8" r="2.2" />
             </svg>
             <span class="font-extrabold text-xl tracking-tight text-gray-950">
               Adstock
@@ -1130,13 +1215,19 @@
       <!-- Top / Main Row -->
       <div class="flex flex-col sm:flex-row items-center justify-between gap-6">
         <!-- Left: Logo & Wordmark -->
-        <a href="#" class="flex items-center gap-2.5 group">
-          <svg class="w-7 h-7 rounded-lg transition-transform group-hover:scale-105" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="32" height="32" rx="8" fill="#0F5132"/>
-            <rect x="7" y="16" width="3.5" height="9" rx="1.2" fill="#6EE7B7"/>
-            <rect x="13" y="11" width="3.5" height="14" rx="1.2" fill="#34D399"/>
-            <path d="M 7 19 C 13 7, 19 8, 25 14" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/>
-            <circle cx="25" cy="14" r="2" fill="#FFFFFF"/>
+        <a href="#" class="nav-logo flex items-center gap-2.5 group" aria-label="Adstock Home">
+          <svg class="adstock-mark w-7.5 h-7.5 sm:w-8 sm:h-8 transition-transform duration-200 group-hover:scale-105" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Base Growth Structure: Upward-sloping solid bar and tangent cross-tie (Forest Green #0F5132) -->
+            <path class="growth-bar" d="M 6 26 L 16 6" />
+            <path class="crosstie" d="M 10.25 17.5 L 19.5 17.5" />
+
+            <!-- State 1: Media Momentum Carryover (Adstock Decaying Curve in Emerald Green #059669) -->
+            <path class="decay-curve" d="M 16 6 C 17.2 13, 19.5 21, 26.5 25.5" />
+
+            <!-- State 2: Optimized Marginal Return Curve (The Tipping Point) -->
+            <path class="tipping-curve" d="M 10.25 17.5 C 13 11.5, 18 10.5, 26.5 10.5" />
+            <!-- Tipping Point Calibration Marker Dot -->
+            <circle class="tipping-dot" cx="18" cy="10.8" r="2.2" />
           </svg>
           <span class="font-extrabold text-xl tracking-tight text-gray-950">
             Adstock
