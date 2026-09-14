@@ -1062,12 +1062,18 @@
                 </label>
                 <select 
                   id="primary-role" 
+                  name="role" 
+                  required 
                   class="w-full px-3.5 py-2.5 rounded-xl bg-ivory-50 border border-gray-200 text-gray-900 text-sm focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand transition shadow-subtle"
                 >
+                  <option value="" disabled selected>Select your role...</option>
                   <option value="cmo">CMO / Marketing Leadership</option>
                   <option value="cfo">CFO / Finance & FP&A</option>
                   <option value="exec">Executive / CEO / Board</option>
-                  <option value="media-lead">Media & Growth Director</option>
+                  <option value="media-growth">Media, Growth & Acquisition</option>
+                  <option value="analytics">Data Science, BI & Analytics</option>
+                  <option value="agency">Agency / Advisory Partner</option>
+                  <option value="other">Other</option>
                 </select>
               </div>
 
