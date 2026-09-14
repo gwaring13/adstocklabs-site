@@ -930,7 +930,7 @@
             href="#trial" 
             class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-white bg-brand hover:bg-brand-dark shadow-emerald-glow transition-all duration-200 transform hover:-translate-y-0.5 text-base"
           >
-            <span>Opt into free trial for $24,000,000 budget →</span>
+            <span>Opt into free trial →</span>
           </a>
           <p class="text-xs text-gray-500 mt-3">
             Takes 15 minutes. We review your actual channel saturation curves under strict NDA.
@@ -1264,7 +1264,6 @@
     const wasteDisplay = document.getElementById("waste-display");
     const wastePercentage = document.getElementById("waste-percentage");
     const revenueDisplay = document.getElementById("revenue-display");
-    const calcCta = document.getElementById("calculator-cta");
     const mediaSpendSelect = document.getElementById("media-spend");
 
     const socialCut = document.getElementById("social-cut");
@@ -1297,9 +1296,6 @@
       socialCut.textContent = "-" + formatDollar(monthlyWaste * 0.50) + "/mo";
       ctvBoost.textContent = "+" + formatDollar(monthlyWaste * 0.33) + "/mo";
       videoBoost.textContent = "+" + formatDollar(monthlyWaste * 0.17) + "/mo";
-
-      // Dynamic CTA Button Text
-      calcCta.innerHTML = `<span>Opt into free trial for ${formatDollar(annualSpend)} budget →</span>`;
 
       // Update lead capture select element to mirror the slider
       if (mediaSpendSelect) {
