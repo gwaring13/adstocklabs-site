@@ -1042,12 +1042,17 @@
                   </label>
                   <select 
                     id="media-spend" 
+                    name="annual_budget" 
                     required 
                     class="w-full px-3.5 py-2.5 rounded-xl bg-ivory-50 border border-gray-200 text-gray-900 text-sm focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand transition shadow-subtle"
                   >
-                    <option value="tier-10m">&lt; $10M / year</option>
-                    <option value="tier-10-50m" selected>$10M – $50M / year</option>
-                    <option value="tier-50m-plus">$50M+ / year</option>
+                    <option value="" disabled selected>Select annual media spend...</option>
+                    <option value="under-2m">&lt; $2M / year</option>
+                    <option value="2m-5m">$2M – $5M / year</option>
+                    <option value="5m-15m">$5M – $15M / year</option>
+                    <option value="15m-50m">$15M – $50M / year</option>
+                    <option value="50m-100m">$50M – $100M / year</option>
+                    <option value="100m-plus">$100M+ / year</option>
                   </select>
                 </div>
               </div>
@@ -1296,25 +1301,33 @@
       socialCut.textContent = "-" + formatDollar(monthlyWaste * 0.50) + "/mo";
       ctvBoost.textContent = "+" + formatDollar(monthlyWaste * 0.33) + "/mo";
       videoBoost.textContent = "+" + formatDollar(monthlyWaste * 0.17) + "/mo";
+    }
 
-      // Update lead capture select element to mirror the slider
-      if (mediaSpendSelect) {
-        if (annualSpend < 10000000) {
-          mediaSpendSelect.value = "tier-10m";
-        } else if (annualSpend <= 50000000) {
-          mediaSpendSelect.value = "tier-10-50m";
-        } else {
-          mediaSpendSelect.value = "tier-50m-plus";
-        }
+    function syncMediaSpendDropdown(annualSpend) {
+      if (!mediaSpendSelect) return;
+      if (annualSpend < 2000000) {
+        mediaSpendSelect.value = "under-2m";
+      } else if (annualSpend <= 5000000) {
+        mediaSpendSelect.value = "2m-5m";
+      } else if (annualSpend <= 15000000) {
+        mediaSpendSelect.value = "5m-15m";
+      } else if (annualSpend <= 50000000) {
+        mediaSpendSelect.value = "15m-50m";
+      } else if (annualSpend <= 100000000) {
+        mediaSpendSelect.value = "50m-100m";
+      } else {
+        mediaSpendSelect.value = "100m-plus";
       }
     }
 
     function initSimulator() {
       if (!slider) return;
       slider.addEventListener("input", (e) => {
-        updateCalculations(Number(e.target.value));
+        const val = Number(e.target.value);
+        updateCalculations(val);
+        syncMediaSpendDropdown(val * 12);
       });
-      // Initial calculation
+      // Initial calculation for metrics
       updateCalculations(Number(slider.value));
     }
 
@@ -1322,6 +1335,7 @@
       if (!slider) return;
       slider.value = amount;
       updateCalculations(amount);
+      syncMediaSpendDropdown(amount * 12);
     }
 
     // Lead Capture Form Submission
