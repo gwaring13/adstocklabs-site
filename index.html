@@ -344,7 +344,7 @@
 
         <!-- Top-Right Action Group -->
         <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
-          <a href="#signin" class="hidden lg:inline-flex text-xs sm:text-sm font-medium text-gray-600 hover:text-gray-950 px-2 py-1 transition-colors">
+          <a href="https://wayfinder-281653745157.us-central1.run.app/run_bq" class="hidden lg:inline-flex text-xs sm:text-sm font-medium text-gray-600 hover:text-gray-950 px-2 py-1 transition-colors">
             Sign in
           </a>
           <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold text-gray-800 hover:text-gray-950 border border-gray-300 hover:border-gray-400 bg-white hover:bg-gray-50 transition-all shadow-subtle">
@@ -1338,7 +1338,7 @@
           <a href="#advantage" class="hover:text-gray-900 transition-colors">The Adstock Edge</a>
           <a href="#calculator" class="hover:text-gray-900 transition-colors">Impact Calculator</a>
           <a href="#trial" class="hover:text-gray-900 transition-colors">Opt into Free Trial</a>
-          <a href="#signin" class="hover:text-gray-900 transition-colors">Sign in</a>
+          <a href="https://wayfinder-281653745157.us-central1.run.app/run_bq" class="hover:text-gray-900 transition-colors">Sign in</a>
         </nav>
       </div>
 
@@ -1369,16 +1369,12 @@
 
       if (user === "adstocklabs26" && pass === "!adstock@26") {
         sessionStorage.setItem("adstock_auth", "unlocked");
-        document.documentElement.classList.add("adstock-authenticated");
-        const gate = document.getElementById("access-gate");
-        const content = document.getElementById("authenticated-content");
-        if (gate) gate.classList.add("hidden");
-        if (content) content.classList.remove("hidden");
-        if (window.lucide) {
-          window.lucide.createIcons();
+        const submitBtn = document.getElementById("gate-submit-btn");
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = '<span>Redirecting...</span>';
         }
-        initSimulator();
-        initMobileMenu();
+        window.location.href = "https://wayfinder-281653745157.us-central1.run.app/run_bq";
       } else {
         if (errorMsg) errorMsg.classList.remove("hidden");
         if (userInput) userInput.classList.add("border-red-500");
