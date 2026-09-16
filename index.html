@@ -344,13 +344,13 @@
 
         <!-- Top-Right Action Group -->
         <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
-          <a href="https://wayfinder-281653745157.us-central1.run.app/run_bq" target="_blank" rel="noopener noreferrer" class="hidden lg:inline-flex text-xs sm:text-sm font-medium text-gray-600 hover:text-gray-950 px-2 py-1 transition-colors">
+          <a href="https://wayfinder-281653745157.us-central1.run.app/run_bq" onclick="openSigninModal(event)" class="hidden lg:inline-flex text-xs sm:text-sm font-medium text-gray-600 hover:text-gray-950 px-2 py-1 transition-colors cursor-pointer">
             Sign in
           </a>
           <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold text-gray-800 hover:text-gray-950 border border-gray-300 hover:border-gray-400 bg-white hover:bg-gray-50 transition-all shadow-subtle">
             Contact sales
           </a>
-          <a href="https://wayfinder-281653745157.us-central1.run.app/run_bq" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 text-xs px-3 py-1.5 sm:text-sm sm:px-4 sm:py-2 rounded-full font-semibold text-white bg-brand hover:bg-brand-dark transition-all shadow-emerald-glow transform hover:-translate-y-0.5 whitespace-nowrap flex-shrink-0">
+          <a href="https://wayfinder-281653745157.us-central1.run.app/run_bq" onclick="openSigninModal(event)" class="inline-flex items-center justify-center gap-1.5 text-xs px-3 py-1.5 sm:text-sm sm:px-4 sm:py-2 rounded-full font-semibold text-white bg-brand hover:bg-brand-dark transition-all shadow-emerald-glow transform hover:-translate-y-0.5 whitespace-nowrap flex-shrink-0 cursor-pointer">
             <span>Launch Platform</span>
             <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 stroke-[2.5]"></i>
           </a>
@@ -370,7 +370,7 @@
       <a href="#advantage" class="block py-2 text-sm font-medium text-gray-800 hover:text-brand mobile-nav-link">How It Works</a>
       <a href="#calculator" class="block py-2 text-sm font-medium text-gray-800 hover:text-brand mobile-nav-link">Impact Calculator</a>
       <div class="pt-2 flex flex-col gap-2 border-t border-gray-100">
-        <a href="https://wayfinder-281653745157.us-central1.run.app/run_bq" target="_blank" rel="noopener noreferrer" class="w-full text-center py-2.5 rounded-full text-xs font-semibold text-white bg-brand mobile-nav-link flex items-center justify-center gap-1.5">
+        <a href="https://wayfinder-281653745157.us-central1.run.app/run_bq" onclick="openSigninModal(event)" class="w-full text-center py-2.5 rounded-full text-xs font-semibold text-white bg-brand mobile-nav-link flex items-center justify-center gap-1.5 cursor-pointer">
           <span>Launch Platform</span>
           <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 stroke-[2.5]"></i>
         </a>
@@ -408,7 +408,7 @@
 
         <!-- Action Buttons -->
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="https://wayfinder-281653745157.us-central1.run.app/run_bq" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full font-bold text-white bg-brand hover:bg-brand-dark shadow-emerald-glow transition-all duration-200 transform hover:-translate-y-0.5 text-base">
+          <a href="https://wayfinder-281653745157.us-central1.run.app/run_bq" onclick="openSigninModal(event)" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full font-bold text-white bg-brand hover:bg-brand-dark shadow-emerald-glow transition-all duration-200 transform hover:-translate-y-0.5 text-base cursor-pointer">
             <span>Launch Platform</span>
             <i data-lucide="arrow-up-right" class="w-4 h-4 stroke-[2.5]"></i>
           </a>
@@ -1345,7 +1345,7 @@
           <a href="#advantage" class="hover:text-gray-900 transition-colors">The Adstock Edge</a>
           <a href="#calculator" class="hover:text-gray-900 transition-colors">Impact Calculator</a>
           <a href="#trial" class="hover:text-gray-900 transition-colors">Opt into Free Trial</a>
-          <a href="https://wayfinder-281653745157.us-central1.run.app/run_bq" target="_blank" rel="noopener noreferrer" class="hover:text-gray-900 transition-colors">Sign in</a>
+          <a href="https://wayfinder-281653745157.us-central1.run.app/run_bq" onclick="openSigninModal(event)" class="hover:text-gray-900 transition-colors cursor-pointer">Sign in</a>
         </nav>
       </div>
 
@@ -1356,6 +1356,81 @@
 
     </div>
   </footer>
+
+  <!-- ========================================================================= -->
+  <!-- INTERACTIVE SIGN-IN / LAUNCH PLATFORM MODAL -->
+  <!-- ========================================================================= -->
+  <div id="signin-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/60 backdrop-blur-sm p-4">
+    <div class="relative bg-white border border-gray-200/90 shadow-[0_25px_60px_rgba(0,0,0,0.15)] rounded-2xl p-8 max-w-sm w-full text-center">
+      
+      <!-- Close Button -->
+      <button 
+        type="button" 
+        onclick="closeSigninModal()" 
+        class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 p-1.5 rounded-lg hover:bg-gray-100 transition-colors"
+        aria-label="Close modal"
+      >
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+
+      <!-- Adstock Geometric Monogram SVG -->
+      <div class="inline-flex items-center justify-center mb-1">
+        <svg width="32" height="32" viewBox="0 0 32 32" class="adstock-mark w-8 h-8 flex-shrink-0" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="growth-bar" d="M 6 26 L 16 6" />
+          <path class="crosstie" d="M 10.25 17.5 L 19.5 17.5" />
+          <path class="decay-curve" d="M 16 6 C 17.2 13, 19.5 21, 26.5 25.5" />
+        </svg>
+      </div>
+
+      <!-- Title & Subtitle -->
+      <h2 class="text-xl font-bold text-gray-900 mt-3">
+        Sign in to Adstock
+      </h2>
+      <p class="text-sm text-gray-500 mt-1">
+        Enter partner credentials to launch the live platform.
+      </p>
+
+      <!-- Modal Form -->
+      <form id="modal-signin-form" onsubmit="handleModalSignin(event)" class="mt-5 text-left">
+        <div>
+          <label for="modal-username" class="sr-only">Username</label>
+          <input 
+            id="modal-username" 
+            type="text" 
+            placeholder="Username" 
+            autocomplete="username" 
+            required 
+            class="bg-[#FAFAF8] border border-gray-200 rounded-lg px-3 py-2 text-sm focus:border-emerald-600 focus:outline-none w-full transition-colors"
+          >
+        </div>
+
+        <div>
+          <label for="modal-password" class="sr-only">Password</label>
+          <input 
+            id="modal-password" 
+            type="password" 
+            placeholder="Password" 
+            autocomplete="current-password" 
+            required 
+            class="bg-[#FAFAF8] border border-gray-200 rounded-lg px-3 py-2 text-sm focus:border-emerald-600 focus:outline-none w-full mt-3 transition-colors"
+          >
+        </div>
+
+        <button 
+          type="submit" 
+          id="modal-submit-btn" 
+          class="bg-[#0F5132] text-white py-2.5 rounded-lg text-sm font-semibold hover:bg-[#0B3D25] w-full mt-4 transition-colors flex items-center justify-center gap-1.5"
+        >
+          <span>Launch Platform →</span>
+        </button>
+
+        <div id="modal-error" class="text-xs text-red-600 mt-2 text-center hidden">
+          Invalid credentials
+        </div>
+      </form>
+
+    </div>
+  </div>
 
   </div> <!-- /#authenticated-content -->
 
@@ -1397,6 +1472,79 @@
       }
     }
 
+    // Sign-In / Launch Platform Modal Logic
+    function openSigninModal(e) {
+      if (e) e.preventDefault();
+      const modal = document.getElementById("signin-modal");
+      if (!modal) return;
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+
+      // Close mobile dropdown menu if open
+      const mobileMenu = document.getElementById("mobile-menu");
+      if (mobileMenu && !mobileMenu.classList.contains("hidden")) {
+        mobileMenu.classList.add("hidden");
+        const menuIcon = document.getElementById("menu-icon");
+        if (menuIcon && window.lucide) {
+          menuIcon.setAttribute("data-lucide", "menu");
+          window.lucide.createIcons();
+        }
+      }
+
+      const userInput = document.getElementById("modal-username");
+      const passInput = document.getElementById("modal-password");
+      const errorMsg = document.getElementById("modal-error");
+      if (errorMsg) errorMsg.classList.add("hidden");
+      if (userInput) {
+        userInput.classList.remove("border-red-500");
+        userInput.value = "";
+      }
+      if (passInput) {
+        passInput.classList.remove("border-red-500");
+        passInput.value = "";
+      }
+      setTimeout(() => {
+        if (userInput) userInput.focus();
+      }, 50);
+      if (window.lucide) {
+        window.lucide.createIcons();
+      }
+    }
+
+    function closeSigninModal() {
+      const modal = document.getElementById("signin-modal");
+      if (!modal) return;
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+    }
+
+    function handleModalSignin(e) {
+      e.preventDefault();
+      const userInput = document.getElementById("modal-username");
+      const passInput = document.getElementById("modal-password");
+      const errorMsg = document.getElementById("modal-error");
+      const submitBtn = document.getElementById("modal-submit-btn");
+
+      const user = userInput ? userInput.value.trim() : "";
+      const pass = passInput ? passInput.value : "";
+
+      if (user === "adstocklabs26" && pass === "!adstock@26") {
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = '<span>Launching Platform...</span>';
+        }
+        window.location.href = "https://wayfinder-281653745157.us-central1.run.app/run_bq";
+      } else {
+        if (errorMsg) errorMsg.classList.remove("hidden");
+        if (userInput) userInput.classList.add("border-red-500");
+        if (passInput) {
+          passInput.classList.add("border-red-500");
+          passInput.value = "";
+          passInput.focus();
+        }
+      }
+    }
+
     // Initialize Components & Check Auth State
     document.addEventListener("DOMContentLoaded", () => {
       const isAuth = sessionStorage.getItem("adstock_auth") === "unlocked";
@@ -1425,6 +1573,36 @@
           }
         });
       }
+
+      // Modal backdrop click listener
+      const modalEl = document.getElementById("signin-modal");
+      if (modalEl) {
+        modalEl.addEventListener("click", (e) => {
+          if (e.target === modalEl) {
+            closeSigninModal();
+          }
+        });
+      }
+
+      // Modal Escape key listener
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          closeSigninModal();
+        }
+      });
+
+      // Modal input error reset on typing
+      const modalUser = document.getElementById("modal-username");
+      const modalPass = document.getElementById("modal-password");
+      const modalErr = document.getElementById("modal-error");
+      [modalUser, modalPass].forEach(inp => {
+        if (inp) {
+          inp.addEventListener("input", () => {
+            if (modalErr) modalErr.classList.add("hidden");
+            inp.classList.remove("border-red-500");
+          });
+        }
+      });
     });
 
     // Interactive Console Tabs
