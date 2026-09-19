@@ -1449,7 +1449,10 @@
       const user = userInput ? userInput.value.trim() : "";
       const pass = passInput ? passInput.value : "";
 
-      if (user === "adstocklabs26" && pass === "!adstock@26") {
+      const isArjun = user.toLowerCase() === "arjun" && pass === "adstockarjun";
+      const isExisting = (user === "adstocklabs26" && pass === "!adstock@26") || (user.toLowerCase() === "admin" && pass === "adstock");
+
+      if (isArjun || isExisting) {
         sessionStorage.setItem("adstock_auth", "unlocked");
         document.documentElement.classList.add("adstock-authenticated");
         const gate = document.getElementById("access-gate");
@@ -1528,7 +1531,13 @@
       const user = userInput ? userInput.value.trim() : "";
       const pass = passInput ? passInput.value : "";
 
-      if (user === "adstocklabs26" && pass === "!adstock@26") {
+      if (user.toLowerCase() === "arjun" && pass === "adstockarjun") {
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = '<span>Launching Demo...</span>';
+        }
+        window.location.href = "https://app.adstocklabs.com/run_bq?demo=arjun";
+      } else if ((user === "adstocklabs26" && pass === "!adstock@26") || (user.toLowerCase() === "admin" && pass === "adstock")) {
         if (submitBtn) {
           submitBtn.disabled = true;
           submitBtn.innerHTML = '<span>Launching Platform...</span>';
